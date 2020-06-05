@@ -12,11 +12,23 @@
 		<nav class="container d-flex">
 			<img src="img/logo.png" height="90" alt="Логотип">
 			<ul class="nav__menu d-flex">
-				<li class="menu__item d-flex">Галерея</li>
-				<li class="menu__item d-flex">Услуги</li>
-				<li class="menu__item d-flex">Магазин</li>
-				<li class="menu__item d-flex">Форум</li>
-				<li class="menu__item d-flex">О нас</li>
+				<li class="menu__item d-flex" id="gallery">Галерея
+					<div class="gallery__content d-flex">
+						<p>
+							<img src="img/photos.png">
+							Фото
+						</p>
+						<p>
+							<img src="img/video.png">
+							Видео
+						</p>
+					</div>
+					
+				</li>
+				<li class="menu__item d-flex" id="services">Услуги</li>
+				<li class="menu__item d-flex" id="shop">Магазин</li>
+				<li class="menu__item d-flex" id="forum">Форум</li>
+				<li class="menu__item d-flex" id="about">О нас</li>
 			</ul>
 			<div class="language_box d-flex">
 				<img src="img/ru.svg" id="active" alt="Вход">
@@ -67,14 +79,14 @@
 	<!--Карточка-->
 	<div class="product d-flex">
 		<img src="img/product1.jpg">
-		<p class="product__description">
-			<h2>Деталь</h2>
-			<span class="text">Краткое описание макета. Любая дополнительная информация.</span>
-			<div>
+		<div class="product__description d-flex">
+			<h2 class="product__description_title">Деталь</h2>
+			<p class="product__description_text">Краткое описание макета. Любая дополнительная информация.</p>
+			<div class="product__wrapper d-flex">
 				<span class="price">830 р.</span>
-				<button>В корзину <img src="img/toBusket.png"></button>
+				<button class="product__btn d-flex"><span>В корзину</span><img src="img/toBusket.png"></button>
 			</div>
-		</p>
+		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="/js/main.js" charset="utf-8"></script>

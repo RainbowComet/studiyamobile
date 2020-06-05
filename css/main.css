@@ -8,7 +8,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	padding: 0px;
 	margin: 0px;
-	text-align: center;
 }
 ul, li {
 	display: block;
@@ -63,6 +62,7 @@ nav {
 .menu__item {
 	align-items: center;
 	justify-content: center;
+	position: relative;
 	width: 103px;
 	color: #575757;
 	font-weight: 600;
@@ -166,6 +166,7 @@ footer {
 }
 /**/
 
+/*Карточка товара*/
 .product {
 	flex-direction: column;
 	width: 255px;
@@ -174,24 +175,57 @@ footer {
 	border-radius: 5px;
 }
 .product__description {
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: space-between;
+	height: 100%;
 	margin: 20px 14px;
 }
-.product__description > h2 {
+.product__description_title {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
 }
-.product__description > .text {
+.product__description_text {
 	font-size: 16px;
 	line-height: 19px;
 }
-.product__description > div > .price {
+.product__wrapper {
+	justify-content: space-between;
+}
+.price {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
 }
-.product__description > div > button {
+.product__btn {
+	justify-content: space-around;
+	align-items: center;
+	width: 119px;
+	height: 34px;
+	background-color: #ffffff;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 17px;
+}
+/**/
+
+/*Функционал меню*/
+.gallery__content {
+	z-index: 10;
+	display: none; 
+	position: absolute;
+	width: 80vw;
+	background-color: #ffffff;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	margin-top: 10.5vh;
+}
+#gallery:active .gallery__content {
+  display: block; 
+}
+.gallery__content:hover {
+  display: block; 
 }
