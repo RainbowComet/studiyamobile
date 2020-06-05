@@ -1,0 +1,197 @@
+/*Спецификация */
+body {
+	background-color: #ffffff;
+	font-family: Proxima Nova;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+p {
+	padding: 0px;
+	margin: 0px;
+	color: ;
+	font-size: ;
+	line-height: ;
+}
+a {
+	color: ;
+	text-decoration: none;
+}
+a:hover {
+	color: #4B3B21;
+	transition: all 0.4s ease;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+.main_div {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container {
+	max-width: 1140px;
+}
+/*Навигация*/
+nav {
+	width: 100%;
+	min-height: 100px;
+	height: 12vh;
+	justify-content: space-around;
+	align-items: center;
+}
+.nav__menu {
+	width: 100%;
+	justify-content: space-around;
+	height: 40px;
+	margin-left: 2.6vw;
+}
+.menu__item {
+	align-items: center;
+	justify-content: center;
+	width: 103px;
+	color: #575757;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	margin-right: 2.6vw;
+}
+.language_box {
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100px;
+	height: 70px;
+	margin-right: 2.6vw;
+}
+.language_box > #active {
+	margin: 0 10px;
+}
+/*Первый экран главная*/
+header {
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	background-image: url("../img/header_back.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 88vh;
+
+}
+header > h1 {
+	font-weight: 300;
+	font-size: 55px;
+	line-height: 60px;
+
+	letter-spacing: 0.095em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+/*второй экран главная*/
+.offer{
+	justify-content: flex-end;
+	align-items: flex-start;
+	height: 100vh;
+	width: 100%;
+}
+.offer__text {
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	max-width: 24vw;
+	font-size: 24px; /*в макете 36*/
+	line-height: 35px; /*в макете 47*/
+	margin-right: 5.7vw;
+}
+.offer__text > span {
+	margin-bottom: 5vh;
+}
+.offer__img{
+	height: 100%;
+}
+/*футер главная*/
+footer {
+	height: 87vh;
+	padding-top: 13vh;
+}
+.gallery {
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.gallery > img {
+	width: 28vw;
+	margin: 20px 15px;
+}
+/*Информация футера*/
+.footer__inf {
+	justify-content: space-between;
+	padding: 6vh 0;
+}
+.contacts {
+	justify-content: space-around;
+	width: 90%;
+	max-width: 700px;
+}
+.contact {
+	align-items: center;
+}
+.contact > span {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #575757;
+	margin-left: 10px;
+}
+.social-networks {
+	justify-content: space-between;
+	width: 230px;
+}
+/**/
+
+.product {
+	flex-direction: column;
+	width: 255px;
+	height: 336px;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+}
+.product__description {
+	margin: 20px 14px;
+}
+.product__description > h2 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+}
+.product__description > .text {
+	font-size: 16px;
+	line-height: 19px;
+}
+.product__description > div > .price {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+}
+.product__description > div > button {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+}
