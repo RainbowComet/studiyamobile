@@ -10,13 +10,10 @@
 <body>
 	<div class="main_div d-flex">
 		<nav class="container d-flex">
-			<img src="img/logo.png" height="90" alt="Логотип">
 			<ul class="nav__menu d-flex">
-				<li class="menu__item item_gallery d-flex" id="gallery">
-					<input class="list-block__btn" type="radio" id="tab_1">
-					<label for="tab_1">Галерея</label>
-					<div class="whiteblock d-flex"></div>
-					<div class="gallery__content d-flex">
+				<li><img src="img/logo.png" height="90" alt="Логотип"></li>
+				<li class="menu__item d-flex" tabindex="0" id="gallery">Галерея
+					<div class="menu__content d-flex" id="gallery_content">
 						<div>
 							<img src="img/photos.png">
 							Фото
@@ -32,13 +29,17 @@
 				<li class="menu__item d-flex" id="shop">Магазин</li>
 				<li class="menu__item d-flex" id="forum">Форум</li>
 				<li class="menu__item d-flex" id="about">О нас</li>
+				<li>
+					<div class="language_box d-flex">
+						<img src="img/ru.svg" id="active" alt="Вход">
+						<img src="img/en.svg" alt="Вход">
+						<img src="img/de.svg" alt="Вход">
+					</div>
+				</li>
+				<li>
+					<img src="img/login_btn.svg" alt="Вход">
+				</li>
 			</ul>
-			<div class="language_box d-flex">
-				<img src="img/ru.svg" id="active" alt="Вход">
-				<img src="img/en.svg" alt="Вход">
-				<img src="img/de.svg" alt="Вход">
-			</div>
-			<img src="img/login_btn.svg" alt="Вход">
 		</nav>
 		<header class="d-flex">
 			<h1>Миниатюрные макеты<br>любой сложности</h1>
@@ -80,7 +81,7 @@
 	</div>
 	
 	<!--Карточка-->
-	<div class="product d-flex">
+	<!--<div class="product d-flex">
 		<img src="img/product1.jpg">
 		<div class="product__description d-flex">
 			<h2 class="product__description_title">Деталь</h2>
@@ -90,7 +91,7 @@
 				<button class="product__btn d-flex"><span>В корзину</span><img src="img/toBusket.png"></button>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="/js/main.js" charset="utf-8"></script>
 </body>
