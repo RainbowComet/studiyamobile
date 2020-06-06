@@ -62,7 +62,6 @@ nav {
 .menu__item {
 	align-items: center;
 	justify-content: center;
-	position: relative;
 	width: 103px;
 	color: #575757;
 	font-weight: 600;
@@ -71,6 +70,10 @@ nav {
 	border: 1px solid #CCCCCC;
 	border-radius: 5px;
 	margin-right: 2.6vw;
+	position: relative;
+}
+.menu__item > label {
+	
 }
 .language_box {
 	justify-content: center;
@@ -99,7 +102,7 @@ header > h1 {
 	font-weight: 300;
 	font-size: 55px;
 	line-height: 60px;
-
+	text-align: center;
 	letter-spacing: 0.095em;
 	text-transform: uppercase;
 	color: #FFFFFF;
@@ -214,18 +217,43 @@ footer {
 
 /*Функционал меню*/
 .gallery__content {
-	z-index: 10;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
 	display: none; 
 	position: absolute;
 	width: 80vw;
+	height: 15vh;
 	background-color: #ffffff;
 	border: 1px solid #CCCCCC;
 	border-radius: 5px;
-	margin-top: 10.5vh;
+	margin: 12vh 25vw;
 }
-#gallery:active .gallery__content {
+.gallery__content > div:first-child {
+	margin-right: 22vw;
+}
+.list-block__btn {
+    display: none;
+}
+#tab_1:checked ~ .gallery__content {
+  display: flex; 
+}
+#tab_1:checked ~ .item_gallery {
+	height: 60px;
+	border-bottom: 1px solid #ffffff;
+}
+#tab_1:checked ~ .whiteblock {
   display: block; 
 }
-.gallery__content:hover {
-  display: block; 
+.whiteblock {
+	z-index: 15;
+	display: none;
+	background-color: #ffffff;
+	position: absolute;
+	width: 103px;
+	height: 12px;
+	margin-top: 22px;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
 }
+
