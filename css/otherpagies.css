@@ -1,8 +1,8 @@
-nav {
+.gallery_page__nav {
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	height: 30vh;
+	min-height: 15vh;
 }
 .nav__menu {
 	justify-content: space-around;
@@ -13,13 +13,33 @@ nav {
 	z-index: 1;
 }
 .gallery__nav {
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	width: 100%;
 }
 .gallery__nav > li {
-	margin-right: 20vw;
+	width: 80px;
 }
-.gallery-nav__item:last-child {
-	margin-right: 0px;
+.hidden {
+	display: none;
+}
+.visible {
+	display: flex;
+}
+.gallery > div > .pic {
+	width: 28vw;
+	margin: 20px 15px;
+}
+.gallery__item {
+	z-index: 1;
+	position: relative;
+}
+.enlarge {
+	z-index: 5;
+	position: absolute;
+	left: 86%;
+    top: 72%;
+}
+.show_img {
+	width: 100%;
 }

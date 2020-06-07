@@ -80,3 +80,18 @@ $('#menu__content5').hover(
 	function(){ $(this).addClass('hover') },
 	function(){ $(this).removeClass('hover') },
 );
+//выезжающее меню при клике
+function open_menu() {
+	(function(){ $('#main-nav').addClass('visible animate__animated animate__slideInUp') })();
+	(function(){ $('#main-nav').removeClass('hidden') }) ();
+	$("#openmenu").replaceWith('<li class="gallery-nav__item" id="closemenu" onclick="close_menu()"><img class="open_menu" src="img/arrows-down.svg"></li>');
+}
+function close_menu() {
+	(function(){ $('#main-nav').addClass('hidden') })();
+	(function(){ $('#main-nav').removeClass('visible') }) ();
+	$("#closemenu").replaceWith('<li class="gallery-nav__item" id="openmenu" onmouseover="open_menu()"><img class="open_menu" src="img/arrows.svg"></li>');
+}
+function enlarge1(img) {
+	(function(){ $('#gallery').addClass('hidden') })();
+	$("#show_img").html('<img src="' + img + '" width="100%">');
+}

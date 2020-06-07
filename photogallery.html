@@ -3,16 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Stydiya</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<!--ПОДКЛЮЧИТЬ ШРИФТ-->
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">-->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/otherpagies.css">
+	<style>
+        @font-face {
+            font-family: Proxima Nova;
+            src: url(Proxima_Nova.ttf)
+        }
+    </style>
+	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 	<div class="main_div d-flex">
-		<nav class="container">
-			<ul class="nav__menu d-flex" id="main-nav">
-				<li><img src="img/logo.png" height="90" alt="Логотип"></li>
+		<nav class="gallery_page__nav container d-flex">
+			<ul class="nav__menu nav-hidden d-flex" id="main-nav">
 				<div class="menu__content gallery-content d-flex" id="menu__content">
 					<div>
 						<a class="d-flex" href="photogallery.html">
@@ -127,25 +132,46 @@
 					<img src="img/login_btn.svg" alt="Вход">
 				</li>
 			</ul>
-			<ul class="gallery__nav d-flex">
+			<ul class="gallery__nav d-flex" id="gallery__nav">
 				<li>
-					<img src="img/logo.png" height="90" alt="Логотип">
+					<a href="index.html"><img src="img/logo.png" height="90" alt="Логотип"></a>
 				</li>
 				<li>
 					<img src="img/photo.svg" height="68">
 				</li>
-				<li>
+				<li onmouseover="open_menu()" id="openmenu">
 					<img class="open_menu" src="img/arrows.svg">
 				</li>
-			<ul/>
+			</ul>
 		</nav>
-		<div class="gallery container d-flex">
-				<img src="img/photos/1.jpg">
-				<img src="img/photos/2.jpg">
-				<img src="img/photos/3.jpg">
-				<img src="img/photos/4.jpg">
-				<img src="img/photos/5.jpg">
-				<img src="img/photos/6.jpg">
+		<div class="gallery container d-flex" id="gallery">
+			<div class="gallery__item" id="1">
+				<img class="pic" src="img/photos/1.jpg">
+				<img src="img/enlarge.svg" class="enlarge" id="enlarge" onclick="enlarge1('img/photos/1.jpg')">
+			</div>
+			<div class="gallery__item">
+				<img class="pic" src="img/photos/2.jpg">
+				<img src="img/enlarge.svg" class="enlarge" id="enlarge" onclick="enlarge1('img/photos/2.jpg')">
+			</div>
+			<div class="gallery__item">
+				<img class="pic" src="img/photos/3.jpg">
+				<img src="img/enlarge.svg" class="enlarge" id="enlarge" onclick="enlarge1('img/photos/3.jpg')">
+			</div>
+			<div class="gallery__item">
+				<img class="pic" src="img/photos/4.jpg">
+				<img src="img/enlarge.svg" class="enlarge" id="enlarge" onclick="enlarge1('img/photos/4.jpg')">
+			</div>
+			<div class="gallery__item">
+				<img class="pic" src="img/photos/5.jpg">
+				<img src="img/enlarge.svg" class="enlarge" id="enlarge" onclick="enlarge1('img/photos/5.jpg')">
+			</div>
+			<div class="gallery__item">
+				<img class="pic" src="img/photos/6.jpg">
+				<img src="img/enlarge.svg" class="enlarge" id="enlarge" onclick="enlarge1('img/photos/6.jpg')">
+			</div>
+		</div>
+		<div class="show_img" id="show_img">
+		
 		</div>
 		<div class="footer__inf footer container d-flex">
 				<ul class="contacts d-flex">
