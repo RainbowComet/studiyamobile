@@ -1,0 +1,25 @@
+nav {
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 30vh;
+}
+.nav__menu {
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 50%;
+	position: relative;
+	z-index: 1;
+}
+.gallery__nav {
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.gallery__nav > li {
+	margin-right: 20vw;
+}
+.gallery-nav__item:last-child {
+	margin-right: 0px;
+}

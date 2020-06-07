@@ -4,14 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Stydiya</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<!--ПОДКЛЮЧИТЬ ШРИФТ--><link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif+Caption&display=swap" rel="stylesheet">
+	<!--ПОДКЛЮЧИТЬ ШРИФТ-->
 	<link rel="stylesheet" href="css/main.css">
-	<style>
-        @font-face {
-            font-family: Proxima Nova;
-            src: url(Proxima_Nova.ttf)
-        }
-    </style>
 </head>
 <body>
 	<div class="main_div d-flex">
@@ -133,25 +127,14 @@
 				</li>
 			</ul>
 		</nav>
-		<header class="d-flex">
-			<h1>Миниатюрные макеты<br>любой сложности</h1>
-		</header>
-		<div class="offer d-flex">
-			<p class="offer__text d-flex">
-				<span><font color="#CCCCCC">•</font> Мы являемся уникальными разработчиками макетов и поставщиками запчастей для создания макетов.</span>
-				<span><font color="#CCCCCC">•</font> Работаем со всеми известными мировыми брендами.</span>
-				<span><font color="#CCCCCC">•</font> Поможем воплотить вашу фантазию в реальность.</span>
-			</p>
-			<img src="img/2scr_img.jpg" class="offer__img">
-		</div>
-		<footer class="container">
-			<div class="gallery d-flex">
+		<div class="gallery d-flex">
 				<img src="img/gallery1.jpg">
 				<img src="img/gallery2.jpg">
 				<img src="img/gallery3.jpg">
 				<img src="img/gallery4.jpg">
 			</div>
-			<div class="footer__inf container d-flex">
+		<footer class="container">
+			<div class="footer__inf d-flex">
 				<ul class="contacts d-flex">
 					<li class="contact d-flex">
 						<img src="img/contact1.svg"><span>+7 915 114-22-72</span>

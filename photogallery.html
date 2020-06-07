@@ -4,19 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Stydiya</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<!--ПОДКЛЮЧИТЬ ШРИФТ--><link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif+Caption&display=swap" rel="stylesheet">
+	<!--ПОДКЛЮЧИТЬ ШРИФТ-->
 	<link rel="stylesheet" href="css/main.css">
-	<style>
-        @font-face {
-            font-family: Proxima Nova;
-            src: url(Proxima_Nova.ttf)
-        }
-    </style>
+	<link rel="stylesheet" href="css/otherpagies.css">
 </head>
 <body>
 	<div class="main_div d-flex">
-		<nav class="container d-flex">
-			<ul class="nav__menu d-flex">
+		<nav class="container">
+			<ul class="nav__menu d-flex" id="main-nav">
 				<li><img src="img/logo.png" height="90" alt="Логотип"></li>
 				<div class="menu__content gallery-content d-flex" id="menu__content">
 					<div>
@@ -132,26 +127,27 @@
 					<img src="img/login_btn.svg" alt="Вход">
 				</li>
 			</ul>
+			<ul class="gallery__nav d-flex">
+				<li>
+					<img src="img/logo.png" height="90" alt="Логотип">
+				</li>
+				<li>
+					<img src="img/photo.svg" height="68">
+				</li>
+				<li>
+					<img class="open_menu" src="img/arrows.svg">
+				</li>
+			<ul/>
 		</nav>
-		<header class="d-flex">
-			<h1>Миниатюрные макеты<br>любой сложности</h1>
-		</header>
-		<div class="offer d-flex">
-			<p class="offer__text d-flex">
-				<span><font color="#CCCCCC">•</font> Мы являемся уникальными разработчиками макетов и поставщиками запчастей для создания макетов.</span>
-				<span><font color="#CCCCCC">•</font> Работаем со всеми известными мировыми брендами.</span>
-				<span><font color="#CCCCCC">•</font> Поможем воплотить вашу фантазию в реальность.</span>
-			</p>
-			<img src="img/2scr_img.jpg" class="offer__img">
+		<div class="gallery container d-flex">
+				<img src="img/photos/1.jpg">
+				<img src="img/photos/2.jpg">
+				<img src="img/photos/3.jpg">
+				<img src="img/photos/4.jpg">
+				<img src="img/photos/5.jpg">
+				<img src="img/photos/6.jpg">
 		</div>
-		<footer class="container">
-			<div class="gallery d-flex">
-				<img src="img/gallery1.jpg">
-				<img src="img/gallery2.jpg">
-				<img src="img/gallery3.jpg">
-				<img src="img/gallery4.jpg">
-			</div>
-			<div class="footer__inf container d-flex">
+		<div class="footer__inf footer container d-flex">
 				<ul class="contacts d-flex">
 					<li class="contact d-flex">
 						<img src="img/contact1.svg"><span>+7 915 114-22-72</span>
@@ -168,22 +164,8 @@
 					<a href="#" target="blank"><img src="img/instagram.svg"></a>
 					<a href="#" target="blank"><img src="img/pinterest.svg"></a>
 				</div>
-			</div>
-		</footer>
-	</div>
-	
-	<!--Карточка-->
-	<!--<div class="product d-flex">
-		<img src="img/product1.jpg">
-		<div class="product__description d-flex">
-			<h2 class="product__description_title">Деталь</h2>
-			<p class="product__description_text">Краткое описание макета. Любая дополнительная информация.</p>
-			<div class="product__wrapper d-flex">
-				<span class="price">830 р.</span>
-				<button class="product__btn d-flex"><span>В корзину</span><img src="img/toBusket.png"></button>
-			</div>
 		</div>
-	</div>-->
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/main.js" charset="utf-8"></script>
 </body>
