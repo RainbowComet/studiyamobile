@@ -246,9 +246,6 @@ footer {
 .gallery-content > div:first-child {
 	margin-right: 22vw;
 }
-.gallery-content {
-	height: 15vh;
-}
 .menu__content > div > a {
 	height: 70%;
 	flex-direction: column;
@@ -263,4 +260,5 @@ footer {
 	height: 50px;
 	background-color: #ffffff;
 	border-bottom: 2px solid #ffffff;
+	position: relative;
  }
