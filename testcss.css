@@ -1,0 +1,51 @@
+body {
+	overflow: hidden;
+}
+.brick__wrapper {
+	flex-wrap: wrap;
+	min-width: 100vw;
+	height: 100vh;
+	background: #AE5F00;
+	overflow: hidden;
+}
+.brick {
+	width: 5.5vw/*70px*/;
+	height: 100%/*35px*/;
+	border: 2px solid #C2C2C2;
+}
+.brick-1 {
+	background: #AE5F00;
+}
+.brick-2 {
+	background: #C54C00;
+}
+.brick-row {
+	display: flex;
+	height: 6.25vh;
+}
+.brick-row:nth-child(even):before,
+.brick-row:nth-child(odd):after {
+	content: '       ';
+	width: 2.75vw;
+	height: 100%;
+	border: 2px solid #C2C2C2;
+	background: #C54C00;
+}
+
+
+
+@media screen and (max-width: 570px) {
+	.brick {
+		width: 5.5vh;
+	}
+	.brick-row {
+		height: 6.25vw;
+	}
+	.row > .brick:nth-child(16), 
+	.row > .brick:nth-child(17),
+	.row > .brick:nth-child(18),
+	.row > .brick:nth-child(19),
+	.row > .brick:nth-child(20)	{
+		display: none;
+	}
+}
