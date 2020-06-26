@@ -13,12 +13,14 @@
         }
     </style>
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/adaptive.css">
+	<link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
 	<div class="main_div d-flex">
 		<nav class="otherpage__nav container d-flex" id="otherpage__nav">
 			<ul class="nav__menu hidden d-flex" id="main-nav">
-				<span id="js-menu_item">
+				<span class="js-menu_item" id="js-menu_item">
 				<div class="menu__content gallery-content d-flex" id="menu__content">
 					<div>
 						<a class="d-flex" href="photogallery.html">
@@ -35,7 +37,7 @@
 				</div>
 				<li class="menu__item menu-gallery d-flex" id="menu__item">Галерея</li>
 				</span>
-				<span id="js-menu_item2">
+				<span class="js-menu_item" id="js-menu_item2">
 				<div class="menu__content d-flex" id="menu__content2">
 					<div>
 						<a class="d-flex" href="services1.html">
@@ -76,13 +78,17 @@
 				</div>
 				<li class="menu__item d-flex" id="menu__item2">Услуги</li>
 				</span>
-				<span id="js-menu_item3">
+				<span class="js-menu_item" id="js-menu_item3">
 				<div class="menu__content shop-icons d-flex" id="menu__content3">
 				<div class="d-flex">
-					<img src="img/g.svg">
-					<img src="img/ho.svg">
-					<img src="img/tt.svg">
-					<img src="img/n.svg">
+					<input class="shop__radio-btn" type="checkbox" id="scale1">
+					<label class="g" for="scale1"></label>
+					<input class="shop__radio-btn" type="checkbox" id="scale2">
+					<label class="ho" for="scale2"></label>
+					<input class="shop__radio-btn" type="checkbox" id="scale3">
+					<label class="tt" for="scale3"></label>
+					<input class="shop__radio-btn" type="checkbox" id="scale4">
+					<label class="n" for="scale4"></label>
 				</div>
 				<div class="d-flex">
 					<hr>
@@ -91,135 +97,403 @@
 				</div>
 				<div class="d-flex">
 					<div>
-						<a class="d-flex" href=".html">
+						<span class="shop__menu-item d-flex">
 							<img src="img/shop1.svg">
-							Изготовление<br>макетов
-						</a>
+							<span class="shop__title">Изготовление<br>макетов</span>
+							<ul class="shop__menu shop__menu-large">
+								<li>Ааааа</li>
+							</ul>
+						</span>
 					</div>
 					<div>
-						<a class="d-flex" href=".html">
+						<span class="shop__menu-item d-flex">
 							<img src="img/shop2.svg">
-							Макеты<br>готовые
-						</a>
+							<span class="shop__title">Макеты<br>готовые</span>
+							<ul class="shop__menu shop__menu-large">
+								<li></li>
+							</ul>
+						</span>
 					</div>
 					<div>
-						<a class="d-flex" href=".html">
+						<span class="shop__menu-item d-flex">
 							<img src="img/shop3.svg">
-							Электроника
-						</a>
+							<span class="shop__title">Электроника</span>
+							<ul class="shop__menu">
+								<li></li>
+							</ul>
+						</span>
 					</div>
 					<div>
-						<a class="d-flex" href=".html">
+						<span class="shop__menu-item d-flex">
 							<img src="img/shop4.svg">
-							Поезда
-						</a>
+							<span class="shop__title">Поезда</span>
+							<ul class="shop__menu">
+								<li>Паровозы</li>
+								<li>Электровозы</li>
+								<li>Тепловозы</li>
+								<li>Вагоны пассажирские</li>
+								<li>Вагоны товарные</li>
+								<li>Прочее</li>
+								<li>Стартовые наборы</li>
+							</ul>
+						</span>
 					</div>
 					<div>
-						<a class="d-flex" href=".html">
+						<span class="shop__menu-item d-flex">
 							<img src="img/shop5.svg">
-							Рельсы
-						</a>
+							<span class="shop__title">Рельсы</span>
+							<ul class="shop__menu">
+								<li></li>
+							</ul>
+						</span>
 					</div>
 					<div>
-						<a class="d-flex" href=".html">
+						<span class="shop__menu-item d-flex">
 							<img src="img/shop6.svg">
-							Строение
-						</a>
+							<span class="shop__title">Строения</span>
+							<ul class="shop__menu">
+								<li>Дома</li>
+								<li>Заводы, фабрики</li>
+								<li>Вокзалы, перроны, депо</li>
+								<li>Детские площадкиб аттракционы</li>
+								<li>Бизнесцентры</li>
+								<li>Магазины</li>
+								<li>Кафе</li>
+								<li>Киоски</li>
+								<li>Прочее</li>
+							</ul>
+						</span>
 					</div>
 					<div>
-						<a class="d-flex" href=".html">
+						<span class="shop__menu-item d-flex">
 							<img src="img/shop7.svg">
-							Элементы<br>ландшафты
-						</a>
+							<span class="shop__title">Элементы<br>ландшафта</span>
+							<ul class="shop__menu shop__menu-large">
+								<li></li>
+							</ul>
+						</span>
 					</div>
 					<div>
-						<a class="d-flex" href=".html">
+						<span class="shop__menu-item d-flex">
 							<img src="img/shop8.svg">
-							Прочее
-						</a>
+							<span class="shop__title">Прочее</span>
+							<ul class="shop__menu">
+								<li></li>
+							</ul>
+						</span>
 					</div>
 					<div>
-						<a class="d-flex" href=".html">
+						<span class="shop__menu-item d-flex">
 							<img src="img/shop9.svg">
-							Инструменты
-						</a>
+							<span class="shop__title">Инструменты</span>
+							<ul class="shop__menu">
+								<li>Ручной инструмент</li>
+								<li>Аккумуляторный инструмент</li>
+								<li>Электро инструмент (220В)</li>
+								<li>Приспособления</li>
+								<li>Свёрла, фрезы</li>
+								<li>Расходники</li>
+								<li>Прочее</li>
+							</ul>
+						</span>
 					</div>
 					<div>
-						<a class="d-flex" href=".html">
+						<span class="shop__menu-item d-flex">
 							<img src="img/shop10.svg">
-							Расходные<br>материалы
-						</a>
+							<span class="shop__title">Расходные<br>материалы</span>
+							<ul class="shop__menu shop__menu-large shop__menu-last">
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+							</ul>
+						</span>
 					</div>
 				</div>
 				</div>
 				<li class="menu__item d-flex" id="menu__item3">Магазин</li>
 				</span>
-				<span id="js-menu_item4">
+				<span class="js-menu_item" id="js-menu_item4">
 				<div class="menu__content d-flex" id="menu__content4">
-					<div>
-						<a class="d-flex" href=".html">
-							<img src="img/login.svg">
-							Вход
-						</a>
+					<div class="about_us-item" id="forum-1" tabindex="1">
+							<span class="d-flex">
+								<img src="img/login.svg">
+								<span class="about_us__title">Вход</span>
+							</span>
+							<div class="about_us-inf d-flex" id="forum-inf1">
+								<input class="text-field" autocomplete="off" placeholder=" Логин" name="login">
+								<input class="text-field" autocomplete="off" placeholder=" Пароль" name="password">
+								<div class="login-inf d-flex">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Личный кабинет</a>
+									<button>Вход</button>
+								</div>
+							</div>
 					</div>
 					<div>
-						<a class="d-flex" href=".html">
+						<a class="d-flex" href="downloads.html">
 							<img src="img/downloads.svg">
 							Загрузки
 						</a>
 					</div>
-					<div>
-						<a class="d-flex" href=".html">
-							<img src="img/rules.svg">
-							Правила
-						</a>
+					<div class="rules-item" id="rules_forum" tabindex="9">
+									<span class="icon d-flex">
+										<img src="img/forum_rules.svg">
+										<span class="about_us__title">Правила форума</span>
+									</span>
+									<div class="rules-inf d-flex" id="rules3">
+										<div id="text8">
+											<p>(Правила форума)1. Магазин работает в установленные для него дни и часы торговли, о чем на видном месте при входе вывешивается соответствующее объявление.</p>
+
+											<p>При наличии большого количества покупателей за 15 минут до наступления времени обеденного перерыва (там, где он установлен) и окончания рабочего дня разрешается прекращать допуск покупателей в магазин. Покупатели, отобравшие товар или имеющие на руках кассовые чеки, должны быть обслужены.</p>
+
+											<p>2. Ключи от магазина должны храниться у заведующего (директора) магазином, если он является материально ответственным лицом, а пломбир или печать - у заместителя заведующего или у одного из материально ответственных лиц. Если заведующий магазином не является материально ответственным лицом, то у него хранятся пломбир или печать, а ключи - у одного из материально ответственных лиц.</p>
+
+											<p>В магазинах, где применяется бригадная материальная ответственность, при открытии и закрытии магазина необходимо присутствие хотя бы одного из членов бригады.</p>
+
+											<p>В крупном магазине его открытие и закрытие производит дежурный администратор вместе с материально ответственными лицами, и ключи от магазина хранятся у дежурного. Хранение ключей и пломбира (печати) у одного лица не допускается.</p>
+
+											<p>3. Закрытие магазина на ремонт допускается только с разрешения управления (отдела) торговли исполкома городского (районного) Совета депутатов трудящихся, при наличии проектно-сметной документации, обеспеченности ремонтных работ источниками финансирования и необходимыми строительными материалами и рабочей силой.</p>
+											<p>Администрация магазина не менее чем за 5 дней до закрытия магазина на ремонт обязана вывесить об этом специальное объявление с указанием ближайших магазинов, производящих торговлю аналогичными товарами.</p>
+
+											<img src="img/loupe.svg" class="enlarge loupe" onclick="enlarge_text('text8')">
+										</div>
+									</div>
 					</div>
 				</div>
 				<li class="menu__item d-flex" id="menu__item4">Форум</li>
 				</span>
-				<span id="js-menu_item5">
-				<div class="menu__content d-flex" id="menu__content5">
-					<div>
-						<a class="d-flex" href=".html">
+				<span class="js-menu_item" id="js-menu_item5">
+				<div class="menu__content about_us-content d-flex" id="menu__content5">
+				<div class="about_us-content__main_items d-flex">
+					<div class="about_us-item" id="about_us-1" tabindex="0">
+						<span class="d-flex">
 							<img src="img/about1.svg">
-							О макетах<br>и о нас
-						</a>
+							<span class="about_us__title">О макетах<br>и о нас</span>
+						</span>
+						<div class="about_us-inf d-flex" id="about_us-inf1">
+							<div class="about_us-inf1__text d-flex">
+								<p>
+									Мы являемся уникальными разработчиками макетов и поставщиками запчастей для создания макетов.
+									Работаем со всеми известными мировыми брендами.
+									Поможем воплотить вашу фантазию в реальность.
+								</p>
+								<div class="social-networks d-flex">
+									<a href="https://www.facebook.com/maketsozdanie.michail" target="blank"><img src="img/facebook.svg"></a>
+									<a href="https://www.instagram.com/maket_sozdanie/" target="blank"><img src="img/instagram.svg"></a>
+									<a href="https://www.pinterest.ru/michail0236/изготовление-макетов/" target="blank"><img src="img/pinterest.svg"></a>
+								</div>
+							</div>
+							<ul class="contacts d-flex">
+								<li class="contact d-flex">
+									<img src="img/contact1.svg"><span>+7 915 114-22-72</span>
+								</li>
+								<li class="contact d-flex">
+									<img src="img/contact2.svg"><span>+7 915 114-22-72</span>
+								</li>
+								<li class="contact d-flex">
+									<img src="img/contact3.svg"><span>m.m789@yandex.ru</span>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div>
-						<a class="d-flex" href=".html">
+					<div class="about_us-item" id="about_us-2" tabindex="0">
+						<span class="d-flex">
 							<img src="img/about2.svg">
-							Гарантия и постгарантийное<br>обслуживание
-						</a>
+							<span class="about_us__title">Гарантия и постгарантийное<br>обслуживание</span>
+						</span>
+						<div class="about_us-inf d-flex" id="about_us-inf2">
+							<div id="text2">
+							<p>1. Магазин работает в установленные для него дни и часы торговли, о чем на видном месте при входе вывешивается соответствующее объявление.</p>
+
+							<p>При наличии большого количества покупателей за 15 минут до наступления времени обеденного перерыва (там, где он установлен) и окончания рабочего дня разрешается прекращать допуск покупателей в магазин. Покупатели, отобравшие товар или имеющие на руках кассовые чеки, должны быть обслужены.</p>
+
+							<p>2. Ключи от магазина должны храниться у заведующего (директора) магазином, если он является материально ответственным лицом, а пломбир или печать - у заместителя заведующего или у одного из материально ответственных лиц. Если заведующий магазином не является материально ответственным лицом, то у него хранятся пломбир или печать, а ключи - у одного из материально ответственных лиц.</p>
+
+							<p>В магазинах, где применяется бригадная материальная ответственность, при открытии и закрытии магазина необходимо присутствие хотя бы одного из членов бригады.</p>
+
+							<p>В крупном магазине его открытие и закрытие производит дежурный администратор вместе с материально ответственными лицами, и ключи от магазина хранятся у дежурного. Хранение ключей и пломбира (печати) у одного лица не допускается.</p>
+
+							<p>3. Закрытие магазина на ремонт допускается только с разрешения управления (отдела) торговли исполкома городского (районного) Совета депутатов трудящихся, при наличии проектно-сметной документации, обеспеченности ремонтных работ источниками финансирования и необходимыми строительными материалами и рабочей силой.</p>
+							<img src="img/loupe.svg" class="enlarge loupe" id="loupe1" onclick="enlarge_text('text2')">
+							</div>
+						</div>
 					</div>
-					<div>
-						<a class="d-flex" href=".html">
+					<div class="about_us-item" id="about_us-3" tabindex="0"> 
+						<span class="d-flex">
 							<img src="img/about3.svg">
-							Оплата<br>и доставка
-						</a>
+							<span class="about_us__title">Оплата<br>и доставка</span>
+						</span>
+						<div class="about_us-inf d-flex" id="about_us-inf3">
+							<div id="text3">
+							<p>1. Магазин работает в установленные для него дни и часы торговли, о чем на видном месте при входе вывешивается соответствующее объявление.</p>
+
+							<p>При наличии большого количества покупателей за 15 минут до наступления времени обеденного перерыва (там, где он установлен) и окончания рабочего дня разрешается прекращать допуск покупателей в магазин. Покупатели, отобравшие товар или имеющие на руках кассовые чеки, должны быть обслужены.</p>
+
+							<p>2. Ключи от магазина должны храниться у заведующего (директора) магазином, если он является материально ответственным лицом, а пломбир или печать - у заместителя заведующего или у одного из материально ответственных лиц. Если заведующий магазином не является материально ответственным лицом, то у него хранятся пломбир или печать, а ключи - у одного из материально ответственных лиц.</p>
+
+							<p>В магазинах, где применяется бригадная материальная ответственность, при открытии и закрытии магазина необходимо присутствие хотя бы одного из членов бригады.</p>
+
+							<p>В крупном магазине его открытие и закрытие производит дежурный администратор вместе с материально ответственными лицами, и ключи от магазина хранятся у дежурного. Хранение ключей и пломбира (печати) у одного лица не допускается.</p>
+
+							<p>3. Закрытие магазина на ремонт допускается только с разрешения управления (отдела) торговли исполкома городского (районного) Совета депутатов трудящихся, при наличии проектно-сметной документации, обеспеченности ремонтных работ источниками финансирования и необходимыми строительными материалами и рабочей силой.</p>
+							<img src="img/loupe.svg" class="enlarge loupe" onclick="enlarge_text('text3')">
+							</div>
+						</div>
 					</div>
-					<div>
-						<a class="d-flex" href=".html">
+					<div class="about_us-item" id="about_us-4" tabindex="0">
+						<span class="d-flex">
 							<img src="img/about4.svg">
-							Возврат<br>товара
-						</a>
+							<span class="about_us__title">Возврат<br>товара</span>
+						</span>
+						<div class="about_us-inf d-flex" id="about_us-inf4">
+							<div id="text4">
+							<p>1. Магазин работает в установленные для него дни и часы торговли, о чем на видном месте при входе вывешивается соответствующее объявление.</p>
+
+							<p>При наличии большого количества покупателей за 15 минут до наступления времени обеденного перерыва (там, где он установлен) и окончания рабочего дня разрешается прекращать допуск покупателей в магазин. Покупатели, отобравшие товар или имеющие на руках кассовые чеки, должны быть обслужены.</p>
+
+							<p>2. Ключи от магазина должны храниться у заведующего (директора) магазином, если он является материально ответственным лицом, а пломбир или печать - у заместителя заведующего или у одного из материально ответственных лиц. Если заведующий магазином не является материально ответственным лицом, то у него хранятся пломбир или печать, а ключи - у одного из материально ответственных лиц.</p>
+
+							<p>В магазинах, где применяется бригадная материальная ответственность, при открытии и закрытии магазина необходимо присутствие хотя бы одного из членов бригады.</p>
+
+							<p>В крупном магазине его открытие и закрытие производит дежурный администратор вместе с материально ответственными лицами, и ключи от магазина хранятся у дежурного. Хранение ключей и пломбира (печати) у одного лица не допускается.</p>
+
+							<p>3. Закрытие магазина на ремонт допускается только с разрешения управления (отдела) торговли исполкома городского (районного) Совета депутатов трудящихся, при наличии проектно-сметной документации, обеспеченности ремонтных работ источниками финансирования и необходимыми строительными материалами и рабочей силой.</p>
+							<p>Администрация магазина не менее чем за 5 дней до закрытия магазина на ремонт обязана вывесить об этом специальное объявление с указанием ближайших магазинов, производящих торговлю аналогичными товарами.</p>
+
+							<p>4. Помещение, оборудование и инвентарь магазина должны удовлетворять требованиям, установленным для данного вида торговли.</p>
+
+							<p>5. Внешние и внутренние витрины магазина должны быть оформлены в соответствии со специальными правилами и практическими указаниями устройства и содержания витрин и использованы для рекламы имеющихся в продаже товаров.</p>
+								
+							<p>6. Заведующий (директор) магазином и его заместитель, заведующие отделами (секциями) и их заместители, продавцы, кассиры, главные (старшие) бухгалтеры, вновь принимаемые для работы в магазине, обязаны ознакомиться с настоящими Правилами и расписаться в том, что Правила прочитаны и приняты к неуклонному исполнению.</p>
+							<img src="img/loupe.svg" class="enlarge loupe" onclick="enlarge_text('text4')">
+							</div>
+						</div>
 					</div>
+				</div>
 				</div>
 				<li class="menu__item d-flex" id="menu__item5">О нас</li>
 				</span>
 				<li>
-					<div class="language_box d-flex">
-						<img src="img/ru.svg" id="active" alt="Вход">
-						<img src="img/en.svg" alt="Вход">
-						<img src="img/de.svg" alt="Вход">
+					<div class="language_box loader" id="language_box">
+						<span id="en" class="d " onclick="animation('EN')"></span>
+						<span id="de" class="d " onclick="animation('DE')"></span>
+						<span id="ru" class="d " onclick="animation('RU')"></span>
 					</div>
 				</li>
-				<li>
-					<img src="img/login_btn.svg" alt="Вход">
-				</li>
+				<span class="js-menu_item" id="js-menu_item6">
+					<div class="menu__content d-flex" id="menu__content6">
+						<div class="about_us-item" id="profile-1" tabindex="1">
+							<span class="d-flex">
+								<img src="img/login.svg">
+								<span class="about_us__title">Вход</span>
+							</span>
+							<div class="about_us-inf d-flex" id="profile-inf1">
+								<input class="text-field" autocomplete="off" placeholder=" Логин" name="login">
+								<input class="text-field" autocomplete="off" placeholder=" Пароль" name="password">
+								<div class="login-inf d-flex">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Личный кабинет</a>
+									<button>Вход</button>
+								</div>
+							</div>
+						</div>
+						<div class="about_us-item" id="profile-2" tabindex="2">
+							<span class="d-flex">
+								<img src="img/registration.svg">
+								<span class="about_us__title">Регистрация</span>
+							</span>
+							<div class="about_us-inf d-flex" id="profile-inf2">
+								<div class="reg_row d-flex">
+									<span>Где хотите зарегистрироваться:</span>
+									<span class="d-flex">Магазин <input class="" name="checkbox_shop" type="checkbox" id="checkbox_shop"></span>
+									<span class="d-flex">Форум <input class="" name="checkbox_shop" type="checkbox" id="checkbox_forum"></span>
+								</div>
+								<div class="reg_row d-flex">
+									<div class="reg_column d-flex">
+										<input class="text-field" autocomplete="off" placeholder=" Имя" name="name_user">
+										<input class="text-field" autocomplete="off" placeholder=" Логин/Ник" name="login">
+										<input class="text-field" autocomplete="off" placeholder=" Пароль" name="password">
+										<span class="reg__small-text">* для ввода пароля использовать заглавные, прописные буквы и цифры</span>
+										
+									</div>
+									<div class="reg_column d-flex">
+										<input class="text-field" autocomplete="off" placeholder=" Фамилия" name="lastname">
+										<input class="text-field" autocomplete="off" placeholder=" E-mail" name="email">
+										<input class="text-field" autocomplete="off" placeholder=" Повторите пароль" name="password2">
+										<span class="reg__small-text">* для ввода пароля использовать заглавные, прописные буквы и цифры</span>
+										
+									</div>
+								</div>
+								<div class="reg_row reg_checkboxes d-flex">
+									<span class="d-flex"><input class="" name="checkbox_shop" type="checkbox" id="checkbox_mail"> Хочу получать рассылки о новинках и акциях</span>
+									<span class="d-flex"><input class="" name="checkbox_shop" type="checkbox" id="checkbox_rules"> Ознакомнен(а) и полностью согласен(на) с правилами форума</span>
+								</div>
+								<button>Регистрация</button>
+							</div>
+						</div>
+						<div class="about_us-item" id="profile-3" tabindex="3">
+							<span class="d-flex">
+								<img src="img/rules.svg">
+								<span class="about_us__title">Правила</span>
+							</span>
+							<div class="about_us-inf d-flex" id="profile-inf3">
+								<div class="rules-item" id="rules_shop" tabindex="4">
+									<span class="icon d-flex">
+										<img src="img/shop_rules.svg">
+										<span class="about_us__title">Правила магазина</span>
+									</span>
+									<div class="rules-inf d-flex" id="rules1">
+										<div id="text6">
+											<p>1. Магазин работает в установленные для него дни и часы торговли, о чем на видном месте при входе вывешивается соответствующее объявление.</p>
+
+											<p>При наличии большого количества покупателей за 15 минут до наступления времени обеденного перерыва (там, где он установлен) и окончания рабочего дня разрешается прекращать допуск покупателей в магазин. Покупатели, отобравшие товар или имеющие на руках кассовые чеки, должны быть обслужены.</p>
+
+											<p>2. Ключи от магазина должны храниться у заведующего (директора) магазином, если он является материально ответственным лицом, а пломбир или печать - у заместителя заведующего или у одного из материально ответственных лиц. Если заведующий магазином не является материально ответственным лицом, то у него хранятся пломбир или печать, а ключи - у одного из материально ответственных лиц.</p>
+
+											<p>В магазинах, где применяется бригадная материальная ответственность, при открытии и закрытии магазина необходимо присутствие хотя бы одного из членов бригады.</p>
+
+											<p>В крупном магазине его открытие и закрытие производит дежурный администратор вместе с материально ответственными лицами, и ключи от магазина хранятся у дежурного. Хранение ключей и пломбира (печати) у одного лица не допускается.</p>
+
+											<p>3. Закрытие магазина на ремонт допускается только с разрешения управления (отдела) торговли исполкома городского (районного) Совета депутатов трудящихся, при наличии проектно-сметной документации, обеспеченности ремонтных работ источниками финансирования и необходимыми строительными материалами и рабочей силой.</p>
+											<p>Администрация магазина не менее чем за 5 дней до закрытия магазина на ремонт обязана вывесить об этом специальное объявление с указанием ближайших магазинов, производящих торговлю аналогичными товарами.</p>
+											
+											<img src="img/loupe.svg" class="enlarge loupe" onclick="enlarge_text('text6')">
+										</div>
+									</div>
+								</div>
+								<div class="rules-item" id="rules_forum" tabindex="5">
+									<span class="icon d-flex">
+										<img src="img/forum_rules.svg">
+										<span class="about_us__title">Правила форума</span>
+									</span>
+									<div class="rules-inf d-flex" id="rules2">
+										<div id="text7">
+											<p>(Правила форума)1. Магазин работает в установленные для него дни и часы торговли, о чем на видном месте при входе вывешивается соответствующее объявление.</p>
+
+											<p>При наличии большого количества покупателей за 15 минут до наступления времени обеденного перерыва (там, где он установлен) и окончания рабочего дня разрешается прекращать допуск покупателей в магазин. Покупатели, отобравшие товар или имеющие на руках кассовые чеки, должны быть обслужены.</p>
+
+											<p>2. Ключи от магазина должны храниться у заведующего (директора) магазином, если он является материально ответственным лицом, а пломбир или печать - у заместителя заведующего или у одного из материально ответственных лиц. Если заведующий магазином не является материально ответственным лицом, то у него хранятся пломбир или печать, а ключи - у одного из материально ответственных лиц.</p>
+
+											<p>В магазинах, где применяется бригадная материальная ответственность, при открытии и закрытии магазина необходимо присутствие хотя бы одного из членов бригады.</p>
+
+											<p>В крупном магазине его открытие и закрытие производит дежурный администратор вместе с материально ответственными лицами, и ключи от магазина хранятся у дежурного. Хранение ключей и пломбира (печати) у одного лица не допускается.</p>
+
+											<p>3. Закрытие магазина на ремонт допускается только с разрешения управления (отдела) торговли исполкома городского (районного) Совета депутатов трудящихся, при наличии проектно-сметной документации, обеспеченности ремонтных работ источниками финансирования и необходимыми строительными материалами и рабочей силой.</p>
+											<p>Администрация магазина не менее чем за 5 дней до закрытия магазина на ремонт обязана вывесить об этом специальное объявление с указанием ближайших магазинов, производящих торговлю аналогичными товарами.</p>
+
+											<img src="img/loupe.svg" class="enlarge loupe" onclick="enlarge_text('text7')">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<li class="menu__item-profile d-flex" id="menu__item6"></li>
+				</span>
 			</ul>
 			<ul class="page__nav d-flex">
 				<li>
-					<a href="index.html"><img src="img/logo.png" height="90" alt="Логотип"></a>
+					<a href="index.html"><img class="logo" src="img/logo.png" height="90" alt="Логотип"></a>
 				</li>
 				<li>
 					<img src="img/services2.svg" height="68">
@@ -340,6 +614,7 @@
 				</div>
 		</div>
 	</div>
+	<div class="enlarged_text" id="enl_text"></div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/main.js" charset="utf-8"></script>
 </body>

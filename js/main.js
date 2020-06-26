@@ -36,15 +36,51 @@ $('#js-menu_item4').hover(
 	function(){ $('#menu__content4').addClass('hover') },
 	function(){ $('#menu__content4').removeClass('hover') }
 );
+$('#forum-1').focus(
+	function(){ $('#forum-inf1').addClass('visible-inf'); }
+);
+$('.text-field').focus(
+	function(){ $('#forum-inf1').addClass('visible-inf') }
+);
 //о нас
 $('#js-menu_item5').hover(
 	function(){ $('#menu__item5').addClass('menu_hover') },
-	function(){ $('#menu__item5').removeClass('menu_hover');$("body").css("overflow", "auto"); }
+	function(){ $('#menu__item5').removeClass('menu_hover'); }
 	);
 $('#js-menu_item5').hover(
 	function(){ $('#menu__content5').addClass('hover') },
-	function(){ $('#menu__content5').removeClass('hover');$("body").css("overflow", "auto"); }
+	function(){ $('#menu__content5').removeClass('hover'); }
 );
+//личный кабинет
+$('#js-menu_item6').hover(
+	function(){ $('#menu__item6').addClass('menu__item-profile_hover') },
+	function(){ $('#menu__item6').removeClass('menu__item-profile_hover'); }
+	);
+$('#js-menu_item6').hover(
+	function(){ $('#menu__content6').addClass('hover') },
+	function(){ $('#menu__content6').removeClass('hover'); }
+); 
+$('#profile-1').focus(
+	function(){ $('#profile-inf1').addClass('visible-inf');
+	$('#profile-inf2').removeClass('visible-inf');
+	$('#profile-inf3').removeClass('visible-inf') }
+);
+$('.text-field').focus(
+	function(){ $('#profile-inf1').addClass('visible-inf') }
+);
+$('#profile-2').focus(
+	function(){ $('#profile-inf2').addClass('visible-inf');
+	$('#profile-inf1').removeClass('visible-inf');
+	$('#profile-inf3').removeClass('visible-inf') }
+);
+$('#profile-3').focus(
+	function(){ $('#profile-inf3').addClass('visible-inf');
+	$('#profile-inf2').removeClass('visible-inf');
+	$('#profile-inf1').removeClass('visible-inf') }
+);
+/*$('.text-field').focus(
+	function(){ $('#profile-inf1').addClass('visible-inf') }
+);*/
 //выезжающее меню при клике
 function open_menu() {
 	(function(){ $('#main-nav').addClass('visible animate__animated animate__slideInUp') })();
@@ -114,12 +150,19 @@ function animation(lang) {
 	
 }
 function enlarge_text (div_id) {
-	$('#'+ div_id).addClass('enlarged_text');
-	$("body").css("overflow", "hidden");
+	$("body").css("overflow", "hidden"); 
 	$('#'+ div_id).children('.loupe').attr("onclick", "lessen_text('"+div_id+"')");
+	$('#enl_text').html($("#"+div_id).html());
+	$("#enl_text").css("visibility", "visible");
+
 }
 function lessen_text (div_id) {
-	$('#'+ div_id).removeClass('enlarged_text');
 	$("body").css("overflow", "auto");
 	$('#'+ div_id).children('.loupe').attr('onclick', "enlarge_text('" + div_id + "')");
-}
+	$('#enl_text').html( );
+	$("#enl_text").css("visibility", "hidden");
+}/*
+if($(window).scrollTop() > 1080) {
+	$('#offer__text').addClass('animate__animated animate__fadeInLeft');
+	$('#offer__img').addClass('animate__animated animate__fadeIn');
+}*/

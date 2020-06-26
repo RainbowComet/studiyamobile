@@ -1,0 +1,25 @@
+@media screen and (max-width: 570px) {
+	nav {
+		height: 1vh;
+	}
+	header {
+		background-image: url("../img/2scr_img.jpg");
+		height: 80vh;
+	}
+	header > h1 {
+		font-size: 40px;
+		line-height: 45px;
+		background: rgb(0,0,0,0.3)
+	}
+	.offer {
+		height: 50vh;
+	}
+	.offer__img { display: none; }
+	.offer__text {
+		max-width: 100%;
+		margin-right: 0;
+		font-size: 20px; /*в макете 36*/
+		line-height: 30px;
+		padding: 15px 20px;
+	}
+}

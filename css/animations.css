@@ -2,6 +2,37 @@
 /*АНИМАЦИЯ*/
 /*Смена языков*/
 /*Данная анимаиц только для мобилок, не забыть убрать*/
+.loader {
+	top: 20px;
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+.loader span {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+}
+.loader span:nth-child(1) {
+	transform:translate(-15px, 0);
+	background-image: url("../img/en.svg");
+}
+.loader span:nth-child(2) {
+	transform:translate(15px, 0);
+	background-image: url("../img/de.svg");
+}
+.loader span:nth-child(3) {
+	transform:translate(0, -30px);
+	background-image: url("../img/ru.svg");
+}
+@media screen and (max-width: 570px) {
 @keyframes loader {
   0% {transform:rotate(-45deg)}
   50%{transform:rotate(-135deg)}
@@ -44,36 +75,7 @@
 	90%{transform:translate(-15px, 0);}
 	100%{transform:translate(-14px, -5px);}
 }
-.loader {
-	top: 20px;
-	width: 50px;
-	height: 50px;
-	position: relative;
-}
-.loader span {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	cursor: pointer;
-}
-.loader span:nth-child(1) {
-	transform:translate(-15px, 0);
-	background-image: url("../img/en.svg");
-}
-.loader span:nth-child(2) {
-	transform:translate(15px, 0);
-	background-image: url("../img/de.svg");
-}
-.loader span:nth-child(3) {
-	transform:translate(0, -30px);
-	background-image: url("../img/ru.svg");
-}
+
 .activated > span { /*активатор анимации*/
 	animation-play-state: running!important;
 }
@@ -94,5 +96,7 @@
 }
 .animationDE-ru {
 	animation: animationDE-ru 2s ease 1 forwards;
+}
+
 }
 /**/
