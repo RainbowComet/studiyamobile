@@ -70,6 +70,13 @@ input[type='checkbox'] {
 	border: 1px solid #CCCCCC;
 	border-radius: 5px;
 }
+input {
+	color: #575757;
+	background: none;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	height: 35px;
+}
 :focus { outline: none; }
 .d-flex {
 	display: -webkit-flex;
@@ -114,7 +121,7 @@ input[type='checkbox'] {
 /*Навигация*/
 nav {
 	width: 100%;
-	height: 100px;
+	height: 95px;
 	justify-content: space-around;
 	align-items: center;
 }
@@ -122,6 +129,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
+	height: 100%;
 	position: relative;
 	z-index: 1;
 }
@@ -155,7 +163,7 @@ header {
 	background-image: url("../img/header_back.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100%;
+		background-size: cover;
 	width: 100%;
 	height: 88vh;
 }
@@ -216,6 +224,7 @@ footer {
 }
 .contact {
 	align-items: center;
+	min-width: 200px;
 }
 .contact > span {
 	font-weight: 600;
@@ -273,7 +282,7 @@ footer {
 }
 .shop-icons {
 	flex-direction: column;
-	height: 186px/*30vh*/;
+	height: 156px/*30vh*/;
 }
 .shop-icons > div {
 	width: 100%;
@@ -281,9 +290,10 @@ footer {
 }
 .shop-icons > div:first-child {
 	align-items: center;
+	height: 65px;
 }
 .shop-icons > div:nth-child(2) {
-	height: 10px;
+	height: 5px;
 }
 .shop-icons > div > span {
 	width: 715px;
@@ -537,7 +547,7 @@ footer {
 	height: 65px;
 	background-image: url("../img/profile.svg");
 	background-repeat: no-repeat;
-	background-position: center;	
+	background-position: center;
 	cursor: pointer;
 }
 .menu__item-profile_hover {
@@ -548,7 +558,7 @@ footer {
 	position: relative;
 }
 #menu__content6 {
-	top: 78%;
+	top: 96%;
 }
 #profile-inf1,
 #forum-inf1 {
@@ -557,9 +567,6 @@ footer {
 }
 .text-field {
 	width: 350px;
-	height: 35px;
-	border: 1px solid #CCCCCC;
-	border-radius: 5px;
 	margin-bottom: 15px;
 }
 .login-inf {
@@ -623,3 +630,9 @@ footer {
 #profile-inf3 {
 	min-height: 90px;
 }
+
+.mobile-header, .mobile-menu-line {
+	display: none;
+}
+	
+	

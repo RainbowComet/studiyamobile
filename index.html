@@ -19,8 +19,8 @@
 <body>
 	<div class="main_div d-flex">
 		<nav class="container d-flex">
-			<ul class="nav__menu d-flex animate__animated animate__rubberBand">
-				<li><a href="index.html"><img class="logo" src="img/logo.png" height="90" alt="Логотип"></a></li>
+			<ul class="nav__menu desktop-menu d-flex animate__animated animate__rubberBand">
+				<li class="logo_wrapper"><a href="index.html"><img class="logo" src="img/logo.png" height="90" alt="Логотип"></a></li>
 				<span class="js-menu_item" id="js-menu_item">
 				<div class="menu__content gallery-content d-flex" id="menu__content">
 					<div>
@@ -82,13 +82,13 @@
 				<span class="js-menu_item" id="js-menu_item3">
 				<div class="menu__content shop-icons d-flex" id="menu__content3">
 				<div class="d-flex">
-					<input class="shop__radio-btn" type="checkbox" id="scale1">
+					<input class="shop__radio-btn" type="checkbox" id="scale1" checked>
 					<label class="g" for="scale1"></label>
-					<input class="shop__radio-btn" type="checkbox" id="scale2">
+					<input class="shop__radio-btn" type="checkbox" id="scale2" checked>
 					<label class="ho" for="scale2"></label>
-					<input class="shop__radio-btn" type="checkbox" id="scale3">
+					<input class="shop__radio-btn" type="checkbox" id="scale3" checked>
 					<label class="tt" for="scale3"></label>
-					<input class="shop__radio-btn" type="checkbox" id="scale4">
+					<input class="shop__radio-btn" type="checkbox" id="scale4" checked>
 					<label class="n" for="scale4"></label>
 				</div>
 				<div class="d-flex">
@@ -492,6 +492,46 @@
 					<li class="menu__item-profile d-flex" id="menu__item6"></li>
 				</span>
 			</ul>
+			<ul class="mobile-menu-line d-flex">
+				<li class="menu-wrapper" tabindex="0">
+					
+					<ul class="mobile-menu">
+						<li class="mobile-menu__item" id="">
+							<span class="inner-menu__title">Галерея</span>
+							<ul class="inner-menu">
+								<li class="inner-menu__item" id=""><a class="d-flex" href="photogallery.html">Фото</a></li>
+								<li class="inner-menu__item" id=""><a class="d-flex" href="videogallery.html">Видео</a></li>
+							</ul>
+						</li>
+						<li class="mobile-menu__item" id="">Услуги</li>
+					
+					</ul>
+					<div class="menu-btn" id="menu-btn"></div>
+				</li>
+				<a href="index.html"><li class="logo"></li></a>
+				<li class="menu__item-profile"></li>
+			</ul>
+			<div class="mobile-header d-flex">
+				<ul class="contacts d-flex">
+					<li class="contact d-flex">
+						<img src="img/contact1.svg"><span>+7 915 114-22-72</span>
+					</li>
+					<li class="contact d-flex">
+						<img src="img/contact2.svg"><span>+7 915 114-22-72</span>
+					</li>
+					<li class="contact d-flex">
+						<img src="img/contact3.svg"><span>m.m789@yandex.ru</span>
+					</li>
+				</ul>
+				<div class="d-flex">
+					<input class="search" type="text" placeholder=" Поиск">
+					<div class="language_box loader" id="language_box-m">
+						<span id="en-m" class="d " onclick="animation('EN')"></span>
+						<span id="de-m" class="d " onclick="animation('DE')"></span>
+						<span id="ru-m" class="d " onclick="animation('RU')"></span>
+					</div>
+				</div>
+			</div>
 		</nav>
 		<header class="d-flex animate__animated animate__fadeIn">
 			<h1>Миниатюрные макеты<br>любой сложности</h1>
@@ -545,7 +585,6 @@
 		</div>
 	</div>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="jquery.viewportchecker.js"></script>
 	<script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>

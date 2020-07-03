@@ -1,25 +1,235 @@
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 1240px) {
+	.container {
+		width: 90vw;
+	}
+	.offer {
+		justify-content: center;
+		height: 100%;
+	}
+	.offer__text {
+		max-width: 70%;
+		margin-right: 0;
+		padding: 45px 20px 0 20px;
+	}
+	.offer__img { display: none; }
+	footer {
+		padding-top: 0;
+		height: 100%;
+	}
+	.gallery > img,
+	.gallery > div > .pic {
+		width: 40vw;
+	}
+	.footer__inf {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: 100px;
+		padding: 3vh 0;
+	}
+	.gallery {
+		width: 100%;
+	}
+	.show_img {
+		height: 44vh;
+	}
+	.infopage__cover {
+		height: 50vh;
+	}
+	.rules-inf > div > p,
+	#about_us-inf2 p,
+	#about_us-inf3 p,
+	#about_us-inf4 p {
+		width: 80vw;
+	}
+}
+@media screen and (max-width: 770px) {
+	.logo_wrapper {
+		width: 99.5vw;
+		position: absolute;
+		top: -80px;
+	}
+	.logo_wrapper > a {
+		display: block;
+		margin: 0 auto;
+		width: 115px;
+	}
 	nav {
-		height: 1vh;
+		padding-top: 100px;
+	}
+	.menu__content {
+		width: 99vw;
+		left: -5%;
+		border-bottom: 10px
+	}
+}
+@media screen and (max-width: 765px) { /*ЧИСТО МЕНЮ*/
+	nav {
+		padding-top: 0;
+		flex-direction: column!important;
+		height: 45vh;
+	}
+	.desktop-menu {
+		display: none;
+	}
+	.mobile-menu-line {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 100%;
+	}
+	.menu__item-profile	{
+		height: 70px;
+		width: 70px;
+		background-size: cover;
+	}
+	.menu-wrapper {
+		width: 82px;
+		height: 72px;
+	}
+	.menu-btn {
+		width: 50px;
+		height: 40px;
+		background-image: url("../img/mobile-menu__icon.svg");
+		background-color: #ffffff;
+		background-position: center;
+		background-size: 40px 50px;
+		background-repeat: no-repeat;
+		padding: 15px;
+		border: 1px solid #ffffff;
+		z-index: 3;
+	}
+	.logo {
+		background-image: url("../img/logo.png");
+		width: 110px;
+		height: 90px;
+	}
+	.inner-menu,
+	.mobile-menu {
+		opacity: 0;
+		transform: scaleY(0);
+		transform-origin: 0 0;
+		transition: .2s ease;
+		height: 0px;
+	}
+	.mobile-menu {
+		width: 97vw;
+		position: absolute;
+		top: 85px;
+		left: 1%;
+		border: 1px solid #CCCCCC;
+		background-color: #ffffff;
+		padding: 15px 25px 0 25px;
+		font-weight: 600;
+		font-size: 16px;
+		text-align: center;
+		z-index: 1;
+	}
+	.inner-menu {
+		margin-top: 15px;
+	}
+	.mobile-menu > li, .inner-menu__item {
+		margin-bottom: 15px;
+	}
+	.menu-wrapper:hover > .mobile-menu,
+	.mobile-menu__item:hover > .inner-menu {
+		opacity: 1;
+		transform: scaleY(1);
+		height: unset;
+	}
+	.menu-wrapper:hover {
+		border: 1px solid #CCCCCC;
+		border-bottom: 1px solid #ffffff;
+	}
+	.menu-wrapper:hover > .menu-btn {
+		position: relative;
+		padding: 15px 14px;
+	}
+	.inner-menu__item {
+		margin-left: 15px;
+	}
+	
+}
+@media screen and (max-width: 570px) {
+	.container {
+		max-width: 98vw;
 	}
 	header {
 		background-image: url("../img/2scr_img.jpg");
-		height: 80vh;
+		height: 70vh;
+		background-size: cover;
 	}
 	header > h1 {
 		font-size: 40px;
 		line-height: 45px;
 		background: rgb(0,0,0,0.3)
 	}
-	.offer {
-		height: 50vh;
-	}
-	.offer__img { display: none; }
 	.offer__text {
-		max-width: 100%;
-		margin-right: 0;
-		font-size: 20px; /*в макете 36*/
+		font-size: 20px;
 		line-height: 30px;
+		max-width: 100%;
 		padding: 15px 20px;
+	}
+	.gallery > img,
+	.gallery > div > .pic {
+		width: 90vw;
+		margin: 10px 15px;
+	}
+	.contacts {
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 15px;
+		align-items: center;
+	}
+	.contact {
+		justify-content: flex-start;
+		margin-bottom: 15px;
+	}
+	.footer__inf {
+		height: 100%;
+	}
+	.show_img > span {
+		padding: 5px 10px;
+		margin: 10px;
+	}
+	.lessen {
+		height: 25px;
+		top: 65%;
+	}
+	.product-services {
+		width: 96vw;
+		height: 100%;
+	}
+	.product__wrapper {
+		flex-direction: column;
+		align-items: flex-start;
+		height: 60px;
+		margin-top: 20px;
+	}
+	.product-services > .product__description > .product__wrapper > div {
+		width: 100%;
+	}
+	/*мобильная шапка*/
+	.mobile-header {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+	}
+	.mobile-header > div {
+		width: 100%;
+		justify-content: space-between;
+	}
+	.search {
+		background-image: url("../img/loupe.svg");
+		background-position:  95% 50%;
+		background-repeat: no-repeat;
+		background-size: 30px auto;
+		width: 200px;
+	}
+}
+@media screen and (max-width: 352px) {
+	header > h1 {
+		font-size: 36px;
+		line-height: 40px;
 	}
 }

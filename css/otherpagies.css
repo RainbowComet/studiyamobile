@@ -6,6 +6,7 @@
 }
 .nav__menu {
 	z-index: 30;
+	justify-content: space-between;
 }
 .page__nav {
 	justify-content: space-between;
@@ -22,6 +23,12 @@
 	margin-top: 10px;
     padding-top: 11px;
     height: 32px;
+}
+.menu__content {
+	top: 75.5%;
+}
+#menu__content6 {
+    top: 78%;
 }
 /**/
 /*Галерея*/
@@ -43,19 +50,20 @@
 .lessen {
 	z-index: 5;
 	position: absolute;
-	left: 90%;
-    top: 90%;
+	right: 5%;
+    top: 70%;
 	cursor: pointer;
 }
 .show_img {
 	justify-content: space-between;
 	align-items: center;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	background-image: url("../img/photos/1.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
+	position: relative;
 }
 .show_img > span {
 	font-size: 30px;
@@ -110,17 +118,17 @@
 	line-height: 22px;
 	color: #000000;
 }
-.ingopage__cover {
+.infopage__cover {
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100%;
+	background-size: cover;
 	width: 100%;
 	height: 88vh;
 }
-.ingopage__cover-services5 {
+.infopage__cover-services5 {
 	background-image: url("../img/header_back.jpg");
 }
-.ingopage__cover-services6 {
+.infopage__cover-services6 {
 	background-image: url("../img/services_img6.jpg");
 }
 .products {

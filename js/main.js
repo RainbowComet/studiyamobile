@@ -131,7 +131,7 @@ function lessen() {
 
 /*смена языков анимация*/
 function activate_language_box() {
-	(function(){ $('#language_box').addClass('activated') })();
+	(function(){ $('#language_box-m').addClass('activated') })();
 }
 function animation(lang) {
 	activate_language_box();
@@ -144,9 +144,9 @@ function animation(lang) {
 	$('span').removeClass('animationRU-de');
 	$('span').removeClass('animationDE-de');
 	$('span').removeClass('animationEN-de');
-	(function(){ $('#en').addClass('animation'+lang+'-en') })();
-	(function(){ $('#de').addClass('animation'+lang+'-de') })();
-	(function(){ $('#ru').addClass('animation'+lang+'-ru') })();
+	(function(){ $('#en-m').addClass('animation'+lang+'-en') })();
+	(function(){ $('#de-m').addClass('animation'+lang+'-de') })();
+	(function(){ $('#ru-m').addClass('animation'+lang+'-ru') })();
 	
 }
 function enlarge_text (div_id) {
@@ -161,7 +161,15 @@ function lessen_text (div_id) {
 	$('#'+ div_id).children('.loupe').attr('onclick', "enlarge_text('" + div_id + "')");
 	$('#enl_text').html( );
 	$("#enl_text").css("visibility", "hidden");
-}/*
+}
+$('#menu-btn').click(function() {
+	$(this).css("background-image", "url('img/mobile-menu__icon__active1.svg')");
+	$(this).css("transition", "0.5s ease");
+});
+$('.mobile-menu__item').hover(
+	function(){ $(".mobile-menu").css("text-align", "left"); $(".mobile-menu").css("transition", "2s ease");}
+	);
+/*
 if($(window).scrollTop() > 1080) {
 	$('#offer__text').addClass('animate__animated animate__fadeInLeft');
 	$('#offer__img').addClass('animate__animated animate__fadeIn');
