@@ -77,6 +77,10 @@ input {
 	border-radius: 5px;
 	height: 35px;
 }
+textarea {
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+}
 :focus { outline: none; }
 .d-flex {
 	display: -webkit-flex;
@@ -274,8 +278,12 @@ footer {
 	border-bottom: 10px solid #ffffff;
 	position: relative;
 }
-.shop-icons, .shop-icons > div, .shop-icons > div > div > a,
-.menu__content > div > a, .about_us-content__main_items {
+.shop-icons,
+.shop-icons > div,
+.shop-icons > div > div > a,
+.menu__content > div > a,
+.scales,
+.about_us-content__main_items {
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
@@ -295,7 +303,8 @@ footer {
 .shop-icons > div:nth-child(2) {
 	height: 5px;
 }
-.shop-icons > div > span {
+.shop-icons > div > span,
+.scales_comment {
 	width: 715px;
 	padding: 0 20px;
 	font-size: 10px;
@@ -372,16 +381,20 @@ footer {
 .n {
 	background-image: url("../img/n.svg");
 }
-#scale1:checked ~ .g {
+#scale1:checked ~ .g,
+#scale1-m:checked ~ .g {
 	background-image: url("../img/g_active.svg");
 }
-#scale2:checked ~ .ho {
+#scale2:checked ~ .ho,
+#scale2-m:checked ~ .ho {
 	background-image: url("../img/ho_active.svg");
 }
-#scale3:checked ~ .tt {
+#scale3:checked ~ .tt,
+#scale3-m:checked ~ .tt {
 	background-image: url("../img/tt_active.svg");
 }
-#scale4:checked ~ .n {
+#scale4:checked ~ .n,
+#scale4-m:checked ~ .n {
 	background-image: url("../img/n_active.svg");
 }
 .hover {

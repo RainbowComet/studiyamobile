@@ -167,8 +167,17 @@ $('#menu-btn').click(function() {
 	$(this).css("transition", "0.5s ease");
 });
 $('.mobile-menu__item').hover(
-	function(){ $(".mobile-menu").css("text-align", "left"); $(".mobile-menu").css("transition", "2s ease");}
-	);
+	function(){ $(".mobile-menu").css("text-align", "left"); $(".mobile-menu").css("transition", "1s ease");}
+);
+$('#call_phone').hover(
+	function(){ $('#callback_phone').addClass('show_content'); $('#callback_email').removeClass('show_content'); $('#callback_whatsapp').removeClass('show_content'); $("nav").css("height", "500px"); }
+);
+$('#call_whatsapp').hover(
+	function(){ $('#callback_whatsapp').addClass('show_content'); $('#callback_phone').removeClass('show_content'); $('#callback_email').removeClass('show_content'); $("nav").css("height", "500px"); }
+);
+$('#write_email').hover(
+	function(){ $('#callback_email').addClass('show_content'); $('#callback_phone').removeClass('show_content'); $('#callback_whatsapp').removeClass('show_content'); $("nav").css("height", "540px"); }
+);
 /*
 if($(window).scrollTop() > 1080) {
 	$('#offer__text').addClass('animate__animated animate__fadeInLeft');

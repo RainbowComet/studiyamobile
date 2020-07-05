@@ -67,7 +67,8 @@
 	nav {
 		padding-top: 0;
 		flex-direction: column!important;
-		height: 45vh;
+		height: 50vh;
+		max-height: 100vh;
 	}
 	.desktop-menu {
 		display: none;
@@ -105,15 +106,18 @@
 		height: 90px;
 	}
 	.inner-menu,
-	.mobile-menu {
+	.mobile-menu,
+	.about_us__inf,
+	.menu_content,
+	.callback {
 		opacity: 0;
 		transform: scaleY(0);
 		transform-origin: 0 0;
-		transition: .2s ease;
+		transition: .4s ease;
 		height: 0px;
 	}
 	.mobile-menu {
-		width: 97vw;
+		width: 85%;
 		position: absolute;
 		top: 85px;
 		left: 1%;
@@ -128,11 +132,14 @@
 	.inner-menu {
 		margin-top: 15px;
 	}
-	.mobile-menu > li, .inner-menu__item {
+	.mobile-menu > li, .inner-menu__item, .menu_title {
 		margin-bottom: 15px;
 	}
 	.menu-wrapper:hover > .mobile-menu,
-	.mobile-menu__item:hover > .inner-menu {
+	.mobile-menu__item:hover > .inner-menu,
+	.inner-menu__item:hover > .about_us__inf,
+	.menu_title:hover > .menu_content, 
+	.show_content {
 		opacity: 1;
 		transform: scaleY(1);
 		height: unset;
@@ -148,9 +155,55 @@
 	.inner-menu__item {
 		margin-left: 15px;
 	}
+	#forum_buttons {
+		flex-direction: column;
+		align-items: space-around;
+	}
+	#search-wrapper {
+		justify-content: center;
+	}
+	.about_us__inf > p {
+		font-weight: 300;
+		margin: 10px 0;
+	}
+	.menu_title:hover {
+		text-align: center;
+	}
+	.menu_content {
+		margin-top: 10px;
+		margin-left: -15px;
+	}
+	.text-field {
+		width: 200px;
+		margin-bottom: 20px;
+	}
+	.login-inf {
+		justify-content: space-around;
+	}
+	.reg_row {
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.reg_column { width: 100%; }
+	.reg_column:first-child {
+		align-items: center;
+	}
+	.reg__small-text {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.reg_checkboxes {
+		flex-wrap: wrap;
+	}
+	.write_letter {
+		width: 80vw;
+	}
 	
 }
 @media screen and (max-width: 570px) {
+	nav {
+		min-height: 400px;
+	}
 	.container {
 		max-width: 98vw;
 	}
@@ -158,6 +211,7 @@
 		background-image: url("../img/2scr_img.jpg");
 		height: 70vh;
 		background-size: cover;
+		z-index: -5;
 	}
 	header > h1 {
 		font-size: 40px;
@@ -227,9 +281,15 @@
 		width: 200px;
 	}
 }
-@media screen and (max-width: 352px) {
+@media screen and (max-width: 365px) {
 	header > h1 {
 		font-size: 36px;
 		line-height: 40px;
+	}
+	.search {
+		width: 50vw;
+	}
+	.reg_row {
+		flex-wrap: wrap;
 	}
 }
