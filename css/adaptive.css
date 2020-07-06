@@ -180,7 +180,7 @@
 	.login-inf {
 		justify-content: space-around;
 	}
-	.reg_row {
+	.reg_row, .reg_row:first-child {
 		margin-bottom: 15px;
 		width: 100%;
 	}
@@ -197,6 +197,15 @@
 	}
 	.write_letter {
 		width: 80vw;
+	}
+	.callback {
+		flex-direction: column;
+	}
+	.callback > .text-field {
+		margin-bottom: 10px;
+	}
+	#callback_email > button {
+		margin-top: 10px;
 	}
 	
 }
@@ -217,6 +226,10 @@
 		font-size: 40px;
 		line-height: 45px;
 		background: rgb(0,0,0,0.3)
+	}
+	input[type='checkbox'] {
+		width: 16px;
+		height: 16px;
 	}
 	.offer__text {
 		font-size: 20px;
@@ -280,6 +293,9 @@
 		background-size: 30px auto;
 		width: 200px;
 	}
+	.checkbox_wrapper > span {
+		align-items: center;
+	}
 }
 @media screen and (max-width: 365px) {
 	header > h1 {
@@ -291,5 +307,37 @@
 	}
 	.reg_row {
 		flex-wrap: wrap;
+	}
+	.mobile-menu {
+		width: 82%
+	}
+	.login-inf {
+		width: 100%;
+		flex-direction: column;
+		height: 50px;
+		justify-content: space-between;
+	}
+	.login-inf > a {
+		font-size: 12px;
+	}
+	.text-field {
+		margin-bottom: 10px;
+		width: 250px;
+		height: 25px;
+	}
+	.search {
+		height: 25px;
+		background-size: 20px auto;
+	}
+	.reg_row:first-child {
+		flex-direction: column;
+	}
+	.checkbox_wrapper {
+		justify-content: space-between;
+		align-items: center;
+		width: 50%;
+	}
+	#checkbox_rules {
+		width: 14px;
 	}
 }
