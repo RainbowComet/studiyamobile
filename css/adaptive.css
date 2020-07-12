@@ -75,6 +75,7 @@
 	nav {
 		padding-top: 0;
 		flex-direction: column!important;
+		height: 115px;
 	}
 	.desktop-menu {
 		display: none;
@@ -118,7 +119,7 @@
 		background-position: center;
 		background-size: 40px 50px;
 		background-repeat: no-repeat;
-		padding: 15px 15px 35px 15px;
+		padding: 15px 15px 38px 15px;
 		z-index: 50;
 	}
 	.menu-btn-active {
@@ -233,6 +234,21 @@
 		margin: 0;
 	}
 	#openmenu { display: none; }
+	.contacts {
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 15px;
+		align-items: center;
+	}
+	.contact {
+		justify-content: flex-start;
+		margin-bottom: 15px;
+	}
+	.mobile-menu, .profile-content {
+		width: 98vw;
+		top: 102px;
+		box-sizing: border-box;
+	}
 }
 @media screen and (max-width: 570px) {
 	nav {
@@ -268,16 +284,6 @@
 	.gallery > div > .pic {
 		width: 90vw;
 		margin: 10px 15px;
-	}
-	.contacts {
-		flex-direction: column;
-		width: 100%;
-		margin-bottom: 15px;
-		align-items: center;
-	}
-	.contact {
-		justify-content: flex-start;
-		margin-bottom: 15px;
 	}
 	.footer__inf {
 		height: 100%;
@@ -332,12 +338,6 @@
 	.reg_row {
 		flex-wrap: wrap;
 	}
-	.mobile-menu {
-		width: 82%
-	}
-	.mobile-menu, .profile-content {
-		width: 83%;
-	}
 	.login-inf {
 		width: 100%;
 		flex-direction: column;
@@ -375,10 +375,6 @@
 	}
 }
 @media screen and (max-width: 765px) and (orientation: landscape) {
-	.mobile-menu, .profile-content {
-		width: 90%;
-		top: 90px;
-	}
 	.reg_row {
 		justify-content: space-around;
 	}
