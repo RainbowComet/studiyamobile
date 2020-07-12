@@ -19,7 +19,7 @@
 <body>
 	<div class="main_div d-flex">
 		<nav class="otherpage__nav container d-flex" id="otherpage__nav">
-			<ul class="nav__menu hidden d-flex" id="main-nav">
+			<ul class="nav__menu desktop-menu hidden d-flex" id="main-nav">
 				<span class="js-menu_item" id="js-menu_item">
 				<div class="menu__content gallery-content d-flex" id="menu__content">
 					<div>
@@ -38,7 +38,7 @@
 				<li class="menu__item menu-gallery d-flex" id="menu__item">Галерея</li>
 				</span>
 				<span class="js-menu_item" id="js-menu_item2">
-				<div class="menu__content d-flex" id="menu__content2">
+				<div class="menu__content  d-flex" id="menu__content2">
 					<div>
 						<a class="d-flex" href="services1.html">
 							<img src="img/services1.svg">
@@ -81,13 +81,13 @@
 				<span class="js-menu_item" id="js-menu_item3">
 				<div class="menu__content shop-icons d-flex" id="menu__content3">
 				<div class="d-flex">
-					<input class="shop__radio-btn" type="checkbox" id="scale1">
+					<input class="shop__radio-btn" type="checkbox" id="scale1" checked>
 					<label class="g" for="scale1"></label>
-					<input class="shop__radio-btn" type="checkbox" id="scale2">
+					<input class="shop__radio-btn" type="checkbox" id="scale2" checked>
 					<label class="ho" for="scale2"></label>
-					<input class="shop__radio-btn" type="checkbox" id="scale3">
+					<input class="shop__radio-btn" type="checkbox" id="scale3" checked>
 					<label class="tt" for="scale3"></label>
-					<input class="shop__radio-btn" type="checkbox" id="scale4">
+					<input class="shop__radio-btn" type="checkbox" id="scale4" checked>
 					<label class="n" for="scale4"></label>
 				</div>
 				<div class="d-flex">
@@ -213,7 +213,7 @@
 				<li class="menu__item d-flex" id="menu__item3">Магазин</li>
 				</span>
 				<span class="js-menu_item" id="js-menu_item4">
-				<div class="menu__content d-flex" id="menu__content4">
+				<div class="menu__content  d-flex" id="menu__content4">
 					<div class="about_us-item" id="forum-1" tabindex="1">
 							<span class="d-flex">
 								<img src="img/login.svg">
@@ -221,7 +221,7 @@
 							</span>
 							<div class="about_us-inf d-flex" id="forum-inf1">
 								<input class="text-field" autocomplete="off" placeholder=" Логин" name="login">
-								<input class="text-field" autocomplete="off" placeholder=" Пароль" name="password">
+								<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
 								<div class="login-inf d-flex">
 									<a href="#">Забыли пароль?</a>
 									<a href="#">Личный кабинет</a>
@@ -263,7 +263,7 @@
 				<li class="menu__item d-flex" id="menu__item4">Форум</li>
 				</span>
 				<span class="js-menu_item" id="js-menu_item5">
-				<div class="menu__content about_us-content d-flex" id="menu__content5">
+				<div class="menu__content  about_us-content d-flex" id="menu__content5">
 				<div class="about_us-content__main_items d-flex">
 					<div class="about_us-item" id="about_us-1" tabindex="0">
 						<span class="d-flex">
@@ -381,7 +381,7 @@
 					</div>
 				</li>
 				<span class="js-menu_item" id="js-menu_item6">
-					<div class="menu__content d-flex" id="menu__content6">
+					<div class="menu__content  d-flex" id="menu__content6">
 						<div class="about_us-item" id="profile-1" tabindex="1">
 							<span class="d-flex">
 								<img src="img/login.svg">
@@ -389,7 +389,7 @@
 							</span>
 							<div class="about_us-inf d-flex" id="profile-inf1">
 								<input class="text-field" autocomplete="off" placeholder=" Логин" name="login">
-								<input class="text-field" autocomplete="off" placeholder=" Пароль" name="password">
+								<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
 								<div class="login-inf d-flex">
 									<a href="#">Забыли пароль?</a>
 									<a href="#">Личный кабинет</a>
@@ -412,14 +412,14 @@
 									<div class="reg_column d-flex">
 										<input class="text-field" autocomplete="off" placeholder=" Имя" name="name_user">
 										<input class="text-field" autocomplete="off" placeholder=" Логин/Ник" name="login">
-										<input class="text-field" autocomplete="off" placeholder=" Пароль" name="password">
+										<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
 										<span class="reg__small-text">* для ввода пароля использовать заглавные, прописные буквы и цифры</span>
 										
 									</div>
 									<div class="reg_column d-flex">
 										<input class="text-field" autocomplete="off" placeholder=" Фамилия" name="lastname">
 										<input class="text-field" autocomplete="off" placeholder=" E-mail" name="email">
-										<input class="text-field" autocomplete="off" placeholder=" Повторите пароль" name="password2">
+										<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Повторите пароль" name="password2"><div class="eye"></div></div>
 										<span class="reg__small-text">* для ввода пароля использовать заглавные, прописные буквы и цифры</span>
 										
 									</div>
@@ -493,13 +493,160 @@
 			</ul>
 			<ul class="page__nav d-flex">
 				<li>
-					<a href="index.html"><img class="logo" src="img/logo.png" height="90" alt="Логотип"></a>
+					<a href="index.html"><img id="logo" src="img/logo.png" height="90" alt="Логотип"></a>
 				</li>
 				<li>
 					<img src="img/services2.svg" height="68">
 				</li>
 				<li onmouseover="open_menu()" id="openmenu">
 					<img class="open_menu" src="img/arrows.svg">
+				</li>
+				<li class="menu-wrapper" tabindex="0" id="menu-wrapper">
+					<ul class="mobile-menu">
+						<li class="mobile-menu__item" id="">
+							<span class="inner-menu__title">Галерея</span>
+							<ul class="inner-menu">
+								<li class="inner-menu__item" id=""><a href="photogallery.html">Фото</a></li>
+								<li class="inner-menu__item" id=""><a href="videogallery.html">Видео</a></li>
+							</ul>
+						</li>
+						<li class="mobile-menu__item" id="">
+							<span class="inner-menu__title">Услуги</span>
+							<ul class="inner-menu">
+								<li class="inner-menu__item" id=""><a href="services1.html">Изготовление макетов</a></li>
+								<li class="inner-menu__item" id=""><a href="services2.html">Макеты готовые</a></li>
+								<li class="inner-menu__item" id=""><a href="services3.html">Цифровое управление</a></li>
+								<li class="inner-menu__item" id=""><a href="services4.html">Комплектующие для макетов</a></li>
+								<li class="inner-menu__item" id=""><a href="services5.html">Выезд на объект</a></li>
+								<li class="inner-menu__item" id=""><a href="services6.html">Обслуживание макетов</a></li>
+							</ul>
+						</li>
+						<li class="mobile-menu__item" id="">
+							<span class="inner-menu__title">Магазин</span>
+							<ul class="inner-menu">
+								<li class="inner-menu__item" id="">
+									<div class="scales d-flex">
+										<input class="shop__radio-btn" type="checkbox" id="scale1-m" checked>
+										<label class="g" for="scale1-m"></label>
+										<input class="shop__radio-btn" type="checkbox" id="scale2-m" checked>
+										<label class="ho" for="scale2-m"></label>
+										<input class="shop__radio-btn" type="checkbox" id="scale3-m" checked>
+										<label class="tt" for="scale3-m"></label>
+										<input class="shop__radio-btn" type="checkbox" id="scale4-m" checked>
+										<label class="n" for="scale4-m"></label>
+									</div>
+									<span class="scales_comment">Фильтр по масштабам (отключите ненужный масштаб)</span>
+								</li>
+								<li class="inner-menu__item" id=""><a href="">Изготовление макетов</a></li>
+								<li class="inner-menu__item" id=""><a href="">Макеты готовые</a></li>
+								<li class="inner-menu__item" id=""><a href="">Электроника</a></li>
+								<li class="inner-menu__item" id=""><a href="">Поезда</a></li>
+								<li class="inner-menu__item" id=""><a href="">Рельсы</a></li>
+								<li class="inner-menu__item" id=""><a href="">Строения</a></li>
+								<li class="inner-menu__item" id=""><a href="">Элементы ландшафты</a></li>
+								<li class="inner-menu__item" id=""><a href="">Прочее</a></li>
+								<li class="inner-menu__item" id=""><a href="">Инструменты</a></li>
+								<li class="inner-menu__item" id=""><a href="">Расходные материалы</a></li>
+							</ul>
+						</li>
+						<li class="mobile-menu__item" id="">
+							<span class="inner-menu__title">Форум</span>
+							<ul class="inner-menu">
+								<li class="inner-menu__item d-flex" id="forum_buttons">
+									<span class="menu_title">Регистрация
+										<div class="menu_content">
+												<div class="reg_row d-flex">
+													<span>Где хотите зарегистрироваться:</span>
+													<span class="checkbox_wrapper d-flex">
+													<span class="d-flex"><input class="" name="checkbox_shop" type="checkbox" id="checkbox_shop"> Магазин</span>
+													<span class="d-flex"><input class="" name="checkbox_shop" type="checkbox" id="checkbox_forum"> Форум</span>
+													</span>
+												</div>
+												<div class="reg_row d-flex">
+													<div class="reg_column d-flex">
+														<input class="text-field" autocomplete="off" placeholder=" Имя" name="name_user">
+														<input class="text-field" autocomplete="off" placeholder=" Логин/Ник" name="login">
+														<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
+														<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Повторите пароль" name="password2"><div class="eye"></div></div>
+														<span class="reg__small-text">* для ввода пароля использовать заглавные, прописные буквы и цифры</span>
+														<input class="text-field" autocomplete="off" placeholder=" Фамилия" name="lastname">
+														<input class="text-field" autocomplete="off" placeholder=" E-mail" name="email">
+													</div>
+												</div>
+													<div class="reg_row reg_checkboxes d-flex"><span class="d-flex"><input class="" name="checkbox_shop" type="checkbox" id="checkbox_mail"> Хочу получать рассылки о новинках и акциях</span></div>
+													<div class="reg_row reg_checkboxes d-flex"><span class="d-flex"><input class="" name="checkbox_shop" type="checkbox" id="checkbox_rules"> Ознакомнен(а) и согласен(на) с правилами форума</span></div>
+												<button>Регистрация</button>
+										</div>
+									</span>
+									<span class="menu_title">Вход
+										<div class="menu_content d-flex">
+												<input class="text-field" autocomplete="off" placeholder=" Логин" name="login">
+												<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
+												<div class="login-inf d-flex">
+													<a href="#">Забыли пароль?</a>
+													<button>Вход</button>
+												</div>
+										</div>
+									</span>
+								</li>
+								<li class="inner-menu__item d-flex" id="search-wrapper">
+									<input class="search" type="text" placeholder=" Поиск">
+								</li>
+								<li class="inner-menu__item" id="">Материалы для скачивания</li>
+								<li class="inner-menu__item" id="">Тема 1</li>
+								<li class="inner-menu__item" id="">Тема 2</li>
+								<li class="inner-menu__item" id="">Тема 3</li>
+							</ul>
+						</li>
+						<li class="mobile-menu__item" id="forum-mobile">
+							<span class="inner-menu__title">О нас</span>
+							<ul class="inner-menu">
+								<li class="inner-menu__item" id="">О макетах и о нас
+									<div class="about_us__inf">
+										<p>
+											Мы являемся уникальными разработчиками макетов и поставщиками запчастей для создания макетов.
+											Работаем со всеми известными мировыми брендами.
+											Поможем воплотить вашу фантазию в реальность.
+										</p>
+									</div>
+								</li>
+								<li class="inner-menu__item" id="">Гарантия и постгарантийное обслуживание
+									<div class="about_us__inf">
+										<p>1. Магазин работает в установленные для него дни и часы торговли, о чем на видном месте при входе вывешивается соответствующее объявление.
+										При наличии большого количества покупателей за 15 минут до наступления времени обеденного перерыва (там, где он установлен) и окончания рабочего дня разрешается прекращать допуск покупателей в магазин. Покупатели, отобравшие товар или имеющие на руках кассовые чеки, должны быть обслужены.</p>
+										<p>2. Ключи от магазина должны храниться у заведующего (директора) магазином, если он является материально ответственным лицом, а пломбир или печать - у заместителя заведующего или у одного из материально ответственных лиц. Если заведующий магазином не является материально ответственным лицом, то у него хранятся пломбир или печать, а ключи - у одного из материально ответственных лиц.
+										В магазинах, где применяется бригадная материальная ответственность, при открытии и закрытии магазина необходимо присутствие хотя бы одного из членов бригады.
+										В крупном магазине его открытие и закрытие производит дежурный администратор вместе с материально ответственными лицами, и ключи от магазина хранятся у дежурного. Хранение ключей и пломбира (печати) у одного лица не допускается.</p>
+										<p>3. Закрытие магазина на ремонт допускается только с разрешения управления (отдела) торговли исполкома городского (районного) Совета депутатов трудящихся, при наличии проектно-сметной документации, обеспеченности ремонтных работ источниками финансирования и необходимыми строительными материалами и рабочей силой.</p>
+									</div>
+								</li>
+								<li class="inner-menu__item" id="">Оплата и доставка
+									<div class="about_us__inf">
+										<p>1. Магазин работает в установленные для него дни и часы торговли, о чем на видном месте при входе вывешивается соответствующее объявление.
+										При наличии большого количества покупателей за 15 минут до наступления времени обеденного перерыва (там, где он установлен) и окончания рабочего дня разрешается прекращать допуск покупателей в магазин. Покупатели, отобравшие товар или имеющие на руках кассовые чеки, должны быть обслужены.</p>
+										<p>2. Ключи от магазина должны храниться у заведующего (директора) магазином, если он является материально ответственным лицом, а пломбир или печать - у заместителя заведующего или у одного из материально ответственных лиц. Если заведующий магазином не является материально ответственным лицом, то у него хранятся пломбир или печать, а ключи - у одного из материально ответственных лиц.
+										В магазинах, где применяется бригадная материальная ответственность, при открытии и закрытии магазина необходимо присутствие хотя бы одного из членов бригады.
+										В крупном магазине его открытие и закрытие производит дежурный администратор вместе с материально ответственными лицами, и ключи от магазина хранятся у дежурного. Хранение ключей и пломбира (печати) у одного лица не допускается.</p>
+										<p>3. Закрытие магазина на ремонт допускается только с разрешения управления (отдела) торговли исполкома городского (районного) Совета депутатов трудящихся, при наличии проектно-сметной документации, обеспеченности ремонтных работ источниками финансирования и необходимыми строительными материалами и рабочей силой.</p>
+									</div>
+								</li>
+								<li class="inner-menu__item" id="">Возврат товара
+									<div class="about_us__inf">
+										<p>1. Магазин работает в установленные для него дни и часы торговли, о чем на видном месте при входе вывешивается соответствующее объявление.
+										При наличии большого количества покупателей за 15 минут до наступления времени обеденного перерыва (там, где он установлен) и окончания рабочего дня разрешается прекращать допуск покупателей в магазин. Покупатели, отобравшие товар или имеющие на руках кассовые чеки, должны быть обслужены.</p>
+										<p>2. Ключи от магазина должны храниться у заведующего (директора) магазином, если он является материально ответственным лицом, а пломбир или печать - у заместителя заведующего или у одного из материально ответственных лиц. Если заведующий магазином не является материально ответственным лицом, то у него хранятся пломбир или печать, а ключи - у одного из материально ответственных лиц.
+										В магазинах, где применяется бригадная материальная ответственность, при открытии и закрытии магазина необходимо присутствие хотя бы одного из членов бригады.
+										В крупном магазине его открытие и закрытие производит дежурный администратор вместе с материально ответственными лицами, и ключи от магазина хранятся у дежурного. Хранение ключей и пломбира (печати) у одного лица не допускается.</p>
+										<p>3. Закрытие магазина на ремонт допускается только с разрешения управления (отдела) торговли исполкома городского (районного) Совета депутатов трудящихся, при наличии проектно-сметной документации, обеспеченности ремонтных работ источниками финансирования и необходимыми строительными материалами и рабочей силой.Администрация магазина не менее чем за 5 дней до закрытия магазина на ремонт обязана вывесить об этом специальное объявление с указанием ближайших магазинов, производящих торговлю аналогичными товарами.</p>
+										<p>4. Помещение, оборудование и инвентарь магазина должны удовлетворять требованиям, установленным для данного вида торговли.</p>
+										<p>5. Внешние и внутренние витрины магазина должны быть оформлены в соответствии со специальными правилами и практическими указаниями устройства и содержания витрин и использованы для рекламы имеющихся в продаже товаров.</p>
+										<p>6. Заведующий (директор) магазином и его заместитель, заведующие отделами (секциями) и их заместители, продавцы, кассиры, главные (старшие) бухгалтеры, вновь принимаемые для работы в магазине, обязаны ознакомиться с настоящими Правилами и расписаться в том, что Правила прочитаны и приняты к неуклонному исполнению.</p>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="menu-btn" id="menu-btn"></div>
 				</li>
 			</ul>
 		</nav>

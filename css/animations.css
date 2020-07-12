@@ -34,45 +34,60 @@
 	background-image: url("../img/ru.svg");
 }
 @media screen and (max-width: 765px) {
+	.loader span:nth-child(1) {
+	transform:translate(-12px, 0);
+	background-image: url("../img/en.svg");
+}
+.loader span:nth-child(2) {
+	transform:translate(13px, 0);
+	background-image: url("../img/de.svg");
+}
+.loader span:nth-child(3) {
+	transform:translate(0, -22px);
+	background-image: url("../img/ru.svg");
+}
 @keyframes loader {
   0% {transform:rotate(-45deg)}
   50%{transform:rotate(-135deg)}
   100%{transform:rotate(-225deg)}}
-@keyframes animationEN-en {
-	0%{transform:translate(-15px, 0);}
-	50%{transform:translate(-10px, -30px);}
-	90%{transform:translate(5px, -30px);background-image:url("../img/en.svg");}
-	100%{transform:translate(5px, -22px);background-image:url("../img/en_active.svg");}
+@keyframes animation_clockwise-left {
+	0%{transform:translate(-12px, 0);}
+	30%{transform:translate(-15px, 0);}
+	60%{transform:translate(-10px, -30px);}
+	90%{transform:translate(5px, -30px);/*background-image:url("../img/en.svg");*/}
+	100%{transform:translate(5px, -22px);/*background-image:url("../img/en_active.svg");*/}
  }
-@keyframes animationEN-de {
-	0%{transform:translate(15px, 0);}
-	50%{transform:translate(5px, 0);}
+@keyframes animation_clockwise-right {
+	0%{transform:translate(13px, 0);}
+	30%{transform:translate(15px, 0);}
+	60%{transform:translate(5px, 0);}
 	90%{transform:translate(-10px, 0);}
 	100%{transform:translate(-7px, 0);}
 }
-@keyframes animationEN-ru {
-	0%{transform:translate(0, -30px);background-image: url("../img/ru_active.svg");}
-	20%{background-image: url("../img/ru.svg");}
-	50%{transform:translate(20px, -30px);}
+@keyframes animation_clockwise-main {
+	0%{transform:translate(0, -22px);}
+	30%{transform:translate(0, -30px);/*background-image: url("../img/ru_active.svg");*/}
+	35%{background-image: url("../img/ru.svg");}
+	60%{transform:translate(20px, -30px);}
 	90%{transform:translate(20px, 0px);}
 	100%{transform:translate(17px, 0px);}
 }
 /**/
 @keyframes animationDE-en {
-	0%{transform:translate(-15px, 0);}
-	50%{transform:translate(0px, 0);}
+	30%{transform:translate(-15px, 0);}
+	60%{transform:translate(0px, 0);}
 	90%{transform:translate(15px, 0);}
 	100%{transform:translate(10px, -5px);}
  }
 @keyframes animationDE-de {
-	0%{transform:translate(15px, 0);}
-	50%{transform:translate(15px, -30px);}
+	30%{transform:translate(15px, 0);}
+	60%{transform:translate(15px, -30px);}
 	90%{transform:translate(0px, -30px);background-image: url("../img/de.svg");}
 	100%{transform:translate(-2px, -26px);background-image: url("../img/de_active.svg");}
 }
 @keyframes animationDE-ru {
-	0%{transform:translate(0, -30px);}
-	50%{transform:translate(-15px, -30px);}
+	30%{transform:translate(0, -30px);}
+	60%{transform:translate(-15px, -30px);}
 	90%{transform:translate(-15px, 0);}
 	100%{transform:translate(-14px, -5px);}
 }
@@ -80,14 +95,14 @@
 .activated > span { /*активатор анимации*/
 	animation-play-state: running!important;
 }
-.animationEN-en {
-	animation: animationEN-en 2s ease 1 forwards;
+.animation_clockwise-main {
+	animation: animation_clockwise-main 2s ease 1 forwards paused;
 }
-.animationEN-de {
-	animation: animationEN-de 2s ease 1 forwards;
+.animation_clockwise-right {
+	animation: animation_clockwise-right 2s ease 1 forwards paused;
 }
-.animationEN-ru {
-	animation: animationEN-ru 2s ease 1 forwards;
+.animation_clockwise-left {
+	animation: animation_clockwise-left 2s ease 1 forwards paused;
 }
 .animationDE-en {
 	animation: animationDE-en 2s ease 1 forwards;

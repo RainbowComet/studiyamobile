@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Stydiya</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="css/otherpagies.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/adaptive.css">
 	<link rel="stylesheet" href="css/animations.css">
@@ -39,7 +38,7 @@
 				<li class="menu__item menu-gallery d-flex" id="menu__item">Галерея</li>
 				</span>
 				<span class="js-menu_item" id="js-menu_item2">
-				<div class="menu__content d-flex" id="menu__content2">
+				<div class="menu__content  d-flex" id="menu__content2">
 					<div>
 						<a class="d-flex" href="services1.html">
 							<img src="img/services1.svg">
@@ -214,7 +213,7 @@
 				<li class="menu__item d-flex" id="menu__item3">Магазин</li>
 				</span>
 				<span class="js-menu_item" id="js-menu_item4">
-				<div class="menu__content d-flex" id="menu__content4">
+				<div class="menu__content  d-flex" id="menu__content4">
 					<div class="about_us-item" id="forum-1" tabindex="1">
 							<span class="d-flex">
 								<img src="img/login.svg">
@@ -222,7 +221,7 @@
 							</span>
 							<div class="about_us-inf d-flex" id="forum-inf1">
 								<input class="text-field" autocomplete="off" placeholder=" Логин" name="login">
-								<input class="text-field password" autocomplete="off" placeholder=" Пароль" name="password">
+								<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
 								<div class="login-inf d-flex">
 									<a href="#">Забыли пароль?</a>
 									<a href="#">Личный кабинет</a>
@@ -264,7 +263,7 @@
 				<li class="menu__item d-flex" id="menu__item4">Форум</li>
 				</span>
 				<span class="js-menu_item" id="js-menu_item5">
-				<div class="menu__content about_us-content d-flex" id="menu__content5">
+				<div class="menu__content  about_us-content d-flex" id="menu__content5">
 				<div class="about_us-content__main_items d-flex">
 					<div class="about_us-item" id="about_us-1" tabindex="0">
 						<span class="d-flex">
@@ -382,7 +381,7 @@
 					</div>
 				</li>
 				<span class="js-menu_item" id="js-menu_item6">
-					<div class="menu__content d-flex" id="menu__content6">
+					<div class="menu__content  d-flex" id="menu__content6">
 						<div class="about_us-item" id="profile-1" tabindex="1">
 							<span class="d-flex">
 								<img src="img/login.svg">
@@ -390,7 +389,7 @@
 							</span>
 							<div class="about_us-inf d-flex" id="profile-inf1">
 								<input class="text-field" autocomplete="off" placeholder=" Логин" name="login">
-								<input class="text-field password" autocomplete="off" placeholder=" Пароль" name="password">
+								<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
 								<div class="login-inf d-flex">
 									<a href="#">Забыли пароль?</a>
 									<a href="#">Личный кабинет</a>
@@ -413,14 +412,14 @@
 									<div class="reg_column d-flex">
 										<input class="text-field" autocomplete="off" placeholder=" Имя" name="name_user">
 										<input class="text-field" autocomplete="off" placeholder=" Логин/Ник" name="login">
-										<input class="text-field password" autocomplete="off" placeholder=" Пароль" name="password">
+										<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
 										<span class="reg__small-text">* для ввода пароля использовать заглавные, прописные буквы и цифры</span>
 										
 									</div>
 									<div class="reg_column d-flex">
 										<input class="text-field" autocomplete="off" placeholder=" Фамилия" name="lastname">
 										<input class="text-field" autocomplete="off" placeholder=" E-mail" name="email">
-										<input class="text-field password" autocomplete="off" placeholder=" Повторите пароль" name="password2">
+										<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Повторите пароль" name="password2"><div class="eye"></div></div>
 										<span class="reg__small-text">* для ввода пароля использовать заглавные, прописные буквы и цифры</span>
 										
 									</div>
@@ -559,8 +558,8 @@
 													<div class="reg_column d-flex">
 														<input class="text-field" autocomplete="off" placeholder=" Имя" name="name_user">
 														<input class="text-field" autocomplete="off" placeholder=" Логин/Ник" name="login">
-														<input class="text-field password" autocomplete="off" placeholder=" Пароль" name="password">
-														<input class="text-field password" autocomplete="off" placeholder=" Повторите пароль" name="password2">
+														<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
+														<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Повторите пароль" name="password2"><div class="eye"></div></div>
 														<span class="reg__small-text">* для ввода пароля использовать заглавные, прописные буквы и цифры</span>
 														<input class="text-field" autocomplete="off" placeholder=" Фамилия" name="lastname">
 														<input class="text-field" autocomplete="off" placeholder=" E-mail" name="email">
@@ -572,9 +571,9 @@
 										</div>
 									</span>
 									<span class="menu_title">Вход
-										<div class="menu_content">
+										<div class="menu_content d-flex">
 												<input class="text-field" autocomplete="off" placeholder=" Логин" name="login">
-												<input class="text-field password" autocomplete="off" placeholder=" Пароль" name="password">
+												<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
 												<div class="login-inf d-flex">
 													<a href="#">Забыли пароль?</a>
 													<button>Вход</button>
@@ -591,7 +590,7 @@
 								<li class="inner-menu__item" id="">Тема 3</li>
 							</ul>
 						</li>
-						<li class="mobile-menu__item" id="">
+						<li class="mobile-menu__item" id="forum-mobile">
 							<span class="inner-menu__title">О нас</span>
 							<ul class="inner-menu">
 								<li class="inner-menu__item" id="">О макетах и о нас
@@ -642,7 +641,46 @@
 					<div class="menu-btn" id="menu-btn"></div>
 				</li>
 				<a href="index.html"><li class="logo"></li></a>
-				<li class="menu__item-profile"></li>
+				<li class="menu__item-profile" id="menu__item-profile"></li>
+				<div class="profile-content">
+					<li class="inner-menu__item d-flex" id="forum_buttons">
+						<span class="menu_title">Регистрация
+							<div class="menu_content">
+								<div class="reg_row d-flex">
+									<span>Где хотите зарегистрироваться:</span>
+									<span class="checkbox_wrapper d-flex">
+									<span class="d-flex"><input class="" name="checkbox_shop" type="checkbox" id="checkbox_shop"> Магазин</span>
+									<span class="d-flex"><input class="" name="checkbox_shop" type="checkbox" id="checkbox_forum"> Форум</span>
+									</span>
+								</div>
+								<div class="reg_row d-flex">
+									<div class="reg_column d-flex">
+										<input class="text-field" autocomplete="off" placeholder=" Имя" name="name_user">
+										<input class="text-field" autocomplete="off" placeholder=" Логин/Ник" name="login">
+										<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
+										<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Повторите пароль" name="password2"><div class="eye"></div></div>
+										<span class="reg__small-text">* для ввода пароля использовать заглавные, прописные буквы и цифры</span>
+											<input class="text-field" autocomplete="off" placeholder=" Фамилия" name="lastname">
+											<input class="text-field" autocomplete="off" placeholder=" E-mail" name="email">
+									</div>
+								</div>
+								<div class="reg_row reg_checkboxes d-flex"><span class="d-flex"><input class="" name="checkbox_shop" type="checkbox" id="checkbox_mail"> Хочу получать рассылки о новинках и акциях</span></div>
+								<div class="reg_row reg_checkboxes d-flex"><span class="d-flex"><input class="" name="checkbox_shop" type="checkbox" id="checkbox_rules"> Ознакомнен(а) и согласен(на) с правилами форума</span></div>
+								<button>Регистрация</button>
+							</div>
+						</span>
+						<span class="menu_title">Вход
+							<div class="menu_content d-flex">
+								<input class="text-field" autocomplete="off" placeholder=" Логин" name="login">
+								<div class="password_wrapper"><input type="password" class="text-field password" autocomplete="off" placeholder=" Пароль" name="password"><div class="eye"></div></div>
+								<div class="login-inf d-flex">
+									<a href="#">Забыли пароль?</a>
+									<button>Вход</button>
+								</div>
+							</div>
+						</span>
+					</li>
+				</div>
 			</ul>
 			<div class="mobile-header d-flex">
 				<ul class="contacts d-flex">
@@ -714,18 +752,6 @@
 		</footer>
 	</div>
 	<div class="enlarged_text" id="enl_text"></div>
-	<!--Карточка-->
-	<!--<div class="product d-flex">
-		<img src="img/product1.jpg">
-		<div class="product__description d-flex">
-			<h2 class="product__description_title">Деталь</h2>
-			<p class="product__description_text">Краткое описание макета. Любая дополнительная информация.</p>
-			<div class="product__wrapper d-flex">
-				<span class="price">830 р.</span>
-				<button class="product__btn d-flex"><span>В корзину</span><img src="img/toBusket.png"></button>
-			</div>
-		</div>
-	</div>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/main.js" charset="utf-8"></script>
 </body>

@@ -1,0 +1,12 @@
+	<!--Карточка-->
+	<!--<div class="product d-flex">
+		<img src="img/product1.jpg">
+		<div class="product__description d-flex">
+			<h2 class="product__description_title">Деталь</h2>
+			<p class="product__description_text">Краткое описание макета. Любая дополнительная информация.</p>
+			<div class="product__wrapper d-flex">
+				<span class="price">830 р.</span>
+				<button class="product__btn d-flex"><span>В корзину</span><img src="img/toBusket.png"></button>
+			</div>
+		</div>
+	</div>-->

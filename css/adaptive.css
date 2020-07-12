@@ -42,6 +42,14 @@
 	#about_us-inf4 p {
 		width: 80vw;
 	}
+	
+	/*с других страниц*/
+	.nav__menu {
+		width: 98vw;
+	}
+	.checkbox_wrapper > span {
+		align-items: center;
+	}
 }
 @media screen and (max-width: 770px) {
 	.logo_wrapper {
@@ -57,7 +65,7 @@
 	nav {
 		padding-top: 100px;
 	}
-	.menu__content {
+	.menu__content-m {
 		width: 99vw;
 		left: -5%;
 		border-bottom: 10px
@@ -67,8 +75,6 @@
 	nav {
 		padding-top: 0;
 		flex-direction: column!important;
-		height: 50vh;
-		max-height: 100vh;
 	}
 	.desktop-menu {
 		display: none;
@@ -78,15 +84,31 @@
 		align-items: center;
 		justify-content: space-around;
 		width: 100%;
+		height: 95px;
 	}
 	.menu__item-profile	{
 		height: 70px;
 		width: 70px;
 		background-size: cover;
 	}
+	.menu__item-profile-active {
+		width: 70px;
+		height: 84px;
+		margin-top: 13px;
+		background-image: url(../img/profile_active.svg);
+		background-position-y: 0;
+		background-position-x: center;
+		background-size: 60px;
+		z-index: 200;
+	}
 	.menu-wrapper {
 		width: 82px;
-		height: 72px;
+		height: 89px;
+		border: 1px solid #ffffff;
+	}
+	.menu-wrapper-active {
+		border: 1px solid #CCCCCC;
+		border-bottom: 1px solid #ffffff;
 	}
 	.menu-btn {
 		width: 50px;
@@ -96,9 +118,13 @@
 		background-position: center;
 		background-size: 40px 50px;
 		background-repeat: no-repeat;
-		padding: 15px;
-		border: 1px solid #ffffff;
-		z-index: 3;
+		padding: 15px 15px 35px 15px;
+		z-index: 50;
+	}
+	.menu-btn-active {
+		position: relative;
+		background-image:url('../img/mobile-menu__icon__active1.svg');
+		transition: 0.5s ease;
 	}
 	.logo {
 		background-image: url("../img/logo.png");
@@ -109,17 +135,19 @@
 	.mobile-menu,
 	.about_us__inf,
 	.menu_content,
-	.callback {
+	.callback,
+	.profile-content {
 		opacity: 0;
 		transform: scaleY(0);
 		transform-origin: 0 0;
 		transition: .4s ease;
 		height: 0px;
 	}
-	.mobile-menu {
+	.mobile-menu,
+	.profile-content {
 		width: 85%;
 		position: absolute;
-		top: 85px;
+		top: 103px;
 		left: 1%;
 		border: 1px solid #CCCCCC;
 		background-color: #ffffff;
@@ -127,7 +155,7 @@
 		font-weight: 600;
 		font-size: 16px;
 		text-align: center;
-		z-index: 1;
+		z-index: 30;
 	}
 	.inner-menu {
 		margin-top: 15px;
@@ -135,22 +163,11 @@
 	.mobile-menu > li, .inner-menu__item, .menu_title {
 		margin-bottom: 15px;
 	}
-	.menu-wrapper:hover > .mobile-menu,
-	.mobile-menu__item:hover > .inner-menu,
 	.inner-menu__item:hover > .about_us__inf,
-	.menu_title:hover > .menu_content, 
 	.show_content {
 		opacity: 1;
 		transform: scaleY(1);
 		height: unset;
-	}
-	.menu-wrapper:hover {
-		border: 1px solid #CCCCCC;
-		border-bottom: 1px solid #ffffff;
-	}
-	.menu-wrapper:hover > .menu-btn {
-		position: relative;
-		padding: 15px 14px;
 	}
 	.inner-menu__item {
 		margin-left: 15px;
@@ -172,10 +189,15 @@
 	.menu_content {
 		margin-top: 10px;
 		margin-left: -15px;
+		flex-direction: column;
+		align-items: center;
 	}
 	.text-field {
 		width: 200px;
 		margin-bottom: 20px;
+	}
+	.password_wrapper {
+		width: 205px;
 	}
 	.login-inf {
 		justify-content: space-around;
@@ -207,11 +229,16 @@
 	#callback_email > button {
 		margin-top: 10px;
 	}
-	
+	.profile-content .inner-menu__item {
+		margin: 0;
+	}
+	#openmenu { display: none; }
 }
 @media screen and (max-width: 570px) {
 	nav {
 		min-height: 400px;
+		height: 50vh;
+		max-height: 100vh;
 	}
 	.container {
 		max-width: 98vw;
@@ -263,7 +290,7 @@
 		height: 25px;
 		top: 65%;
 	}
-	.product-services {
+	.product-services, .product-services > img {
 		width: 96vw;
 		height: 100%;
 	}
@@ -293,9 +320,6 @@
 		background-size: 30px auto;
 		width: 200px;
 	}
-	.checkbox_wrapper > span {
-		align-items: center;
-	}
 }
 @media screen and (max-width: 365px) {
 	header > h1 {
@@ -311,6 +335,9 @@
 	.mobile-menu {
 		width: 82%
 	}
+	.mobile-menu, .profile-content {
+		width: 83%;
+	}
 	.login-inf {
 		width: 100%;
 		flex-direction: column;
@@ -324,6 +351,12 @@
 		margin-bottom: 10px;
 		width: 250px;
 		height: 25px;
+	}
+	.password_wrapper {
+		width: 255px;
+	}
+	.eye {
+		top: 8px;
 	}
 	.search {
 		height: 25px;
@@ -339,5 +372,21 @@
 	}
 	#checkbox_rules {
 		width: 14px;
+	}
+}
+@media screen and (max-width: 765px) and (orientation: landscape) {
+	.mobile-menu, .profile-content {
+		width: 90%;
+		top: 90px;
+	}
+	.reg_row {
+		justify-content: space-around;
+	}
+	.show_img {
+		height: 100vh;
+	}
+	.enlarge_img {
+		left: 80%;
+		top: 60%;
 	}
 }
