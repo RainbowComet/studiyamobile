@@ -183,19 +183,28 @@ $('.inner-menu__title').click(function() {
 	$(this).siblings(".inner-menu").toggleClass("show_content");
 	$(".mobile-menu").css("text-align", "left");
 	$(".menu_content").filter(".show_content").removeClass("show_content");
+	$(".menu_title").filter(".menu_title-hover").removeClass("menu_title-hover");
+	$('html, body').animate({
+        scrollTop: $(this).offset().top-50  // класс объекта к которому приезжаем
+    }, 400);
 });
 $('.menu_title').click(function() {
 	$(".menu_content").filter(".show_content").removeClass("show_content");
 	$(this).find(".menu_content").toggleClass("show_content");
+	$('.menu_title').filter(".menu_title-hover").removeClass("menu_title-hover");
+	$(this).toggleClass("menu_title-hover");
+	$('html, body').animate({
+        scrollTop: $(this).offset().top-50  // класс объекта к которому приезжаем
+    }, 400);
 });
 $('#call_phone').hover(
-	function(){ $('#callback_phone').addClass('show_content'); $('#callback_email').removeClass('show_content'); $('#callback_whatsapp').removeClass('show_content'); $("nav").css("height", "500px"); }
+	function(){ $('#callback_phone').addClass('show_content'); $('#callback_email').removeClass('show_content'); $('#callback_whatsapp').removeClass('show_content'); $("nav").css("height", "480px"); }
 );
 $('#call_whatsapp').hover(
-	function(){ $('#callback_whatsapp').addClass('show_content'); $('#callback_phone').removeClass('show_content'); $('#callback_email').removeClass('show_content'); $("nav").css("height", "500px"); }
+	function(){ $('#callback_whatsapp').addClass('show_content'); $('#callback_phone').removeClass('show_content'); $('#callback_email').removeClass('show_content'); $("nav").css("height", "480px"); }
 );
 $('#write_email').hover(
-	function(){ $('#callback_email').addClass('show_content'); $('#callback_phone').removeClass('show_content'); $('#callback_whatsapp').removeClass('show_content'); $("nav").css("height", "540px"); }
+	function(){ $('#callback_email').addClass('show_content'); $('#callback_phone').removeClass('show_content'); $('#callback_whatsapp').removeClass('show_content'); $("nav").css("height", "568px"); }
 );
 
 $('.eye').click(function() {

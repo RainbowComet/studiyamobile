@@ -70,6 +70,13 @@
 		left: -5%;
 		border-bottom: 10px
 	}
+	.search {
+		background-image: url("../img/loupe.svg");
+		background-position:  95% 50%;
+		background-repeat: no-repeat;
+		background-size: 30px auto;
+		width: 200px;
+	}
 }
 @media screen and (max-width: 765px) { /*ЧИСТО МЕНЮ*/
 	nav {
@@ -127,11 +134,7 @@
 		background-image:url('../img/mobile-menu__icon__active1.svg');
 		transition: 0.5s ease;
 	}
-	.logo {
-		background-image: url("../img/logo.png");
-		width: 110px;
-		height: 90px;
-	}
+	
 	.inner-menu,
 	.mobile-menu,
 	.about_us__inf,
@@ -184,7 +187,7 @@
 		font-weight: 300;
 		margin: 10px 0;
 	}
-	.menu_title:hover {
+	.menu_title-hover {
 		text-align: center;
 	}
 	.menu_content {
@@ -220,6 +223,7 @@
 	}
 	.write_letter {
 		width: 80vw;
+		resize: none;
 	}
 	.callback {
 		flex-direction: column;
@@ -318,13 +322,6 @@
 	.mobile-header > div {
 		width: 100%;
 		justify-content: space-between;
-	}
-	.search {
-		background-image: url("../img/loupe.svg");
-		background-position:  95% 50%;
-		background-repeat: no-repeat;
-		background-size: 30px auto;
-		width: 200px;
 	}
 }
 @media screen and (max-width: 365px) {
