@@ -492,15 +492,6 @@
 				</span>
 			</ul>
 			<ul class="page__nav d-flex">
-				<li>
-					<a href="index.html"><img id="logo" src="img/logo.png" alt="Логотип"></a>
-				</li>
-				<li>
-					<img src="img/photo.svg" height="68">
-				</li>
-				<li onmouseover="open_menu()" id="openmenu">
-						<img class="open_menu" src="img/arrows.svg">
-				</li>
 				<li class="menu-wrapper" tabindex="0" id="menu-wrapper">
 					<ul class="mobile-menu">
 						<li class="mobile-menu__item" id="">
@@ -648,7 +639,20 @@
 					</ul>
 					<div class="menu-btn" id="menu-btn"></div>
 				</li>
-			</ul>
+
+				<li id="desktop-logo">
+					<a href="index.html"><img id="logo" src="img/logo.png" alt="Логотип"></a>
+				</li>
+				<li id="mobile-logo">
+					<a href="index.html"><img id="logo" src="img/logo.jpg" alt="Логотип"></a>
+				</li>
+				<li>
+					<img src="img/photo.svg" height="68">
+				</li>
+				<li onmouseover="open_menu()" id="openmenu">
+						<img class="open_menu" src="img/arrows.svg">
+				</li>
+							</ul>
 		</nav>
 		<div class="gallery container d-flex" id="gallery">
 			<div class="gallery__item" id="1" onclick="enlarge1('1')">

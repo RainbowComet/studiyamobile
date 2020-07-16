@@ -196,6 +196,9 @@
 	justify-content: space-between;
 	align-items: center;
 }
+#mobile-logo {
+	display: none;
+}
 /**/
 #menu-wrapper {
 	display: none;
@@ -212,6 +215,14 @@
 	}
 	#menu-wrapper {
 		height: 92px;
+		display: block;
+	}
+}
+@media screen and (max-width: 567px) {
+	#desktop-logo {
+		display: none;
+	}
+	#mobile-logo {
 		display: block;
 	}
 }

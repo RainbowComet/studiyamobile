@@ -197,15 +197,26 @@ $('.menu_title').click(function() {
         scrollTop: $(this).offset().top-50  // класс объекта к которому приезжаем
     }, 400);
 });
+if ($(window).width()<=375) {
 $('#call_phone').hover(
-	function(){ $('#callback_phone').addClass('show_content'); $('#callback_email').removeClass('show_content'); $('#callback_whatsapp').removeClass('show_content'); $("nav").css("height", "480px"); }
+	function(){ $('#callback_phone').addClass('show_content'); $('#callback_email').removeClass('show_content'); $('#callback_whatsapp').removeClass('show_content'); $("nav").css("height", "416px"); }
 );
 $('#call_whatsapp').hover(
-	function(){ $('#callback_whatsapp').addClass('show_content'); $('#callback_phone').removeClass('show_content'); $('#callback_email').removeClass('show_content'); $("nav").css("height", "480px"); }
+	function(){ $('#callback_whatsapp').addClass('show_content'); $('#callback_phone').removeClass('show_content'); $('#callback_email').removeClass('show_content'); $("nav").css("height", "416px"); }
 );
+}
+else {
+$('#call_phone').hover(
+	function(){ $('#callback_phone').addClass('show_content'); $('#callback_email').removeClass('show_content'); $('#callback_whatsapp').removeClass('show_content'); $("nav").css("height", "426px"); }
+);
+$('#call_whatsapp').hover(
+	function(){ $('#callback_whatsapp').addClass('show_content'); $('#callback_phone').removeClass('show_content'); $('#callback_email').removeClass('show_content'); $("nav").css("height", "426px"); }
+);
+}
 $('#write_email').hover(
-	function(){ $('#callback_email').addClass('show_content'); $('#callback_phone').removeClass('show_content'); $('#callback_whatsapp').removeClass('show_content'); $("nav").css("height", "568px"); }
-);
+	function(){ $('#callback_email').addClass('show_content'); $('#callback_phone').removeClass('show_content'); $('#callback_whatsapp').removeClass('show_content'); $("nav").css("height", "513px"); }
+);	
+
 
 $('.eye').click(function() {
 	if ($(this).siblings('.password').attr('type') == 'password') $(this).siblings('.password').attr('type', 'text');
@@ -217,7 +228,7 @@ $('.eye').click(function() {
 		$(".menu-wrapper").toggleClass("menu-wrapper-active");
 	}
 
-	//выезжающее меню при клике
+//выезжающее меню при клике
 function open_menu() {
 	(function(){ $('#main-nav').addClass('visible animate__animated animate__slideInUp') })();
 	(function(){ $('#main-nav').removeClass('hidden') }) ();
@@ -230,8 +241,3 @@ function close_menu() {
 	$("#otherpage__nav").attr("style", "");
 	$("#closemenu").replaceWith('<li class="gallery-nav__item" id="openmenu" onmouseover="open_menu()"><img class="open_menu" src="img/arrows.svg"></li>');
 }
-/*
-if($(window).scrollTop() > 1080) {
-	$('#offer__text').addClass('animate__animated animate__fadeInLeft');
-	$('#offer__img').addClass('animate__animated animate__fadeIn');
-}*/
